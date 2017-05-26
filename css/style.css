@@ -1,0 +1,158 @@
+/* --- Base Styles --- */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    font-family: 'Khula', sans-serif;
+    background: #99cdff;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    transition-duration: 0.4s;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: darkslategray;
+}
+
+ul {
+    list-style: none;
+    padding: inherit;
+}
+
+/* --- Main Header and Logo --- */
+
+header {
+    display: flex;
+    flex-direction: row-reverse;
+/*    align-items: center;*/
+    justify-content: space-around;    
+    background: url(../design/images/bg.jpg) top center no-repeat;
+}
+
+.contact {
+    margin-top: 15px;
+    background-color: rgba(30, 106, 178, 0.1);;
+    border: none;
+    padding: 10px 12px;
+    font-size: 20px;
+    border-radius: 8px;
+    transition-duration: 0.4s;
+}
+
+.contact:hover {
+    background-color: rgba(58, 153, 242, 0.3);
+    cursor: pointer;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.top-wrap {
+    color: #1e4966;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Anton', sans-serif;
+    font-size: 14px;
+}
+
+.main-logo {
+    margin: 0;
+}
+
+.sub-logo {
+    margin: 0;
+    font-size: 10px;
+}
+
+.phone {
+    margin-top: 10px;
+}
+
+.phone strong {
+    font-size: 1.2em;
+}
+
+.nav-button {
+    margin-top: 15px;
+    background-color: rgba(30, 106, 178, 0.1);
+    color: black;
+    padding: 10px 12px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 8px;
+    transition-duration: 0.4s;
+}
+
+.main-nav {
+    position: relative;
+    display: inline-block;
+}
+
+.nav {
+    display: none;
+    text-align: left;
+    position: absolute;
+    background-color: #b5dbff;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.nav a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+/*    display: block;*/
+}
+
+.nav a:hover {
+    background-color: #d3eaff
+}
+
+.main-nav:hover .nav {
+    display: block;
+}
+
+.main-nav:hover .nav-button {
+    background-color: rgba(58, 153, 242, 0.3);
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+/* --- Titlebar --- */
+
+.titlebar {
+    margin: 10px 20px 0;
+    font-weight: bold;
+}
+
+/* --- Main Content --- */
+
+.president {
+    max-width: 100%;
+    padding-top: 10px;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.5), 0 17px 50px 0 rgba(0,0,0,0.2);
+}
+
+.main-content {
+    margin: 10px;
+    text-align: justify;
+}
+
+.services {
+    text-align: center;
+}
+
+/* --- Media Queries --- */
