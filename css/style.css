@@ -7,20 +7,21 @@
 body {
     text-align: center;
     font-family: 'Khula', sans-serif;
-    background: #99cdff;
+    color: #3b4251;
+    background: #ccdfff;
     margin-top: 75px;
 }
 
 a {
     display: block;
     text-decoration: none;
-    color: black;
+    color: #3b4251;
     transition-duration: 0.4s;
 }
 
 a:hover {
     text-decoration: underline;
-    color: darkslategray;
+    color: #9a98a0;
 }
 
 ul {
