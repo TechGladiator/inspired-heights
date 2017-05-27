@@ -8,6 +8,7 @@ body {
     text-align: center;
     font-family: 'Khula', sans-serif;
     background: #99cdff;
+    margin-top: 75px;
 }
 
 a {
@@ -34,10 +35,12 @@ header {
     flex-direction: row-reverse;
 /*    align-items: center;*/
     justify-content: space-around;    
+    height: 75px;
     background: url(../design/images/bg.jpg) top center no-repeat;
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.18);
     position: fixed;
     width: 100%;
+    top: 0;
 }
 
 .contact {
