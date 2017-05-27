@@ -35,6 +35,9 @@ header {
 /*    align-items: center;*/
     justify-content: space-around;    
     background: url(../design/images/bg.jpg) top center no-repeat;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.18);
+    position: fixed;
+    width: 100%;
 }
 
 .contact {
@@ -42,7 +45,9 @@ header {
     background-color: rgba(30, 106, 178, 0.1);;
     border: none;
     padding: 10px 12px;
+    font-family: 'Anton', sans-serif;
     font-size: 20px;
+    color: #1e4966;
     border-radius: 8px;
     transition-duration: 0.4s;
 }
@@ -86,7 +91,9 @@ header {
     background-color: rgba(30, 106, 178, 0.1);
     color: black;
     padding: 10px 12px;
+    font-family: 'Anton', sans-serif;
     font-size: 20px;
+    color: #1e4966;
     border: none;
     cursor: pointer;
     text-align: center;
@@ -142,7 +149,7 @@ header {
 
 .president {
     max-width: 100%;
-    padding-top: 10px;
+    margin-top: 18px;
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.5), 0 17px 50px 0 rgba(0,0,0,0.2);
 }
 
