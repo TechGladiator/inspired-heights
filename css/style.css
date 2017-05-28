@@ -142,13 +142,6 @@ header {
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
-/* --- Titlebar --- */
-
-.titlebar {
-    margin: 10px 20px 0;
-    font-weight: bold;
-}
-
 /* --- Main Content --- */
 
 .president {
@@ -160,9 +153,18 @@ header {
 .main-content {
     margin: 10px;
     text-align: justify;
+    font-size: 18px;
 }
 
 .services {
+    text-align: center;
+}
+
+/* --- Titlebar --- */
+
+.titlebar {
+    margin: 10px 20px 0;
+    font-weight: bold;
     text-align: center;
 }
 
