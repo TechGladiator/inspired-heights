@@ -9,7 +9,7 @@ body {
     font-family: 'Khula', sans-serif;
     color: #3b4251;
     background: #ccdfff;
-    margin-top: 75px;
+/*    margin-top: 75px;*/
 }
 
 a {
@@ -38,10 +38,10 @@ header {
 /*    justify-content: space-around;    */
 /*    height: 75px;*/
     background: url(../design/images/bg.jpg) top center no-repeat;
-    box-shadow: 0 4px 16px 0 rgba(0,0,0,0.18);
-    position: fixed;
-    width: 100%;
-    top: 0;
+/*    box-shadow: 0 4px 16px 0 rgba(0,0,0,0.18);*/
+/*    position: fixed;*/
+/*    width: 100%;*/
+/*    top: 0;*/
 }
 
 .top-wrap {
