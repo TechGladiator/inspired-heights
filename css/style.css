@@ -27,6 +27,7 @@ a:hover {
 ul {
     list-style: none;
     padding: inherit;
+    margin: 0;
 }
 
 /* --- Main Header and Logo --- */
@@ -119,6 +120,7 @@ header {
 
 .main-nav:hover .nav {
     display: block;
+    bottom: 100%;
 }
 
 .main-nav:hover .nav-button {
