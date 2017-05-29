@@ -72,6 +72,8 @@ header {
     font-size: 1.2em;
 }
 
+/* --- Footer --- */
+
 .nav-button {
     margin-top: 15px;
     background-color: rgba(30, 106, 178, 0.1);
@@ -127,9 +129,9 @@ header {
 /* --- Main Content --- */
 
 .president {
-    max-width: 100%;
+    max-width: 60%;
     margin-top: 18px;
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.5), 0 17px 50px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5), 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
 .main-content {
