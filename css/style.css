@@ -66,20 +66,11 @@ header {
 /* --- Footer --- */
 
 .nav-button {
-    margin-top: 15px;
-    background-color: rgba(30, 106, 178, 0.1);
-    color: black;
-    padding: 10px 12px;
     font-family: 'Anton', sans-serif;
     font-size: 20px;
     color: #1e4966;
     border: none;
     cursor: pointer;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    border-radius: 8px;
-    transition-duration: 0.4s;
 }
 
 .main-nav {
@@ -110,11 +101,6 @@ header {
 .main-nav:hover .nav {
     display: block;
     bottom: 100%;
-}
-
-.main-nav:hover .nav-button {
-    background-color: rgba(58, 153, 242, 0.3);
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
 /* --- Main Content --- */
