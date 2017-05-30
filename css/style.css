@@ -9,7 +9,6 @@ body {
     font-family: 'Khula', sans-serif;
     color: #3b4251;
     background: #ccdfff;
-    margin-top: 75px;
 }
 
 a {
@@ -27,21 +26,13 @@ a:hover {
 ul {
     list-style: none;
     padding: inherit;
+    margin: 0;
 }
 
 /* --- Main Header and Logo --- */
 
 header {
-/*    display: flex;*/
-/*    flex-direction: row-reverse;*/
-/*    align-items: center;*/
-/*    justify-content: space-around;    */
-/*    height: 75px;*/
     background: url(../design/images/bg.jpg) top center no-repeat;
-    box-shadow: 0 4px 16px 0 rgba(0,0,0,0.18);
-    position: fixed;
-    width: 100%;
-    top: 0;
 }
 
 .top-wrap {
@@ -72,43 +63,35 @@ header {
     font-size: 1.2em;
 }
 
+/* --- Footer --- */
+
+.main-nav {
+    position: relative;
+}
+
 .nav-button {
-    margin-top: 15px;
-    background-color: rgba(30, 106, 178, 0.1);
-    color: black;
-    padding: 10px 12px;
+    background-color: rgba(0, 0, 0, 0);
     font-family: 'Anton', sans-serif;
     font-size: 20px;
     color: #1e4966;
     border: none;
+    width: 100%;
     cursor: pointer;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    border-radius: 8px;
-    transition-duration: 0.4s;
-}
-
-.main-nav {
-    position: relative;
-    display: inline-block;
 }
 
 .nav {
     display: none;
-    text-align: left;
     position: absolute;
-    background-color: #b5dbff;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    background-color: #ccdfff;
+    min-width: 100%;
     z-index: 1;
+    padding: 28px 0;
 }
 
 .nav a {
-    color: black;
+    min-width: 100%;
     padding: 12px 16px;
     text-decoration: none;
-/*    display: block;*/
 }
 
 .nav a:hover {
@@ -117,19 +100,15 @@ header {
 
 .main-nav:hover .nav {
     display: block;
-}
-
-.main-nav:hover .nav-button {
-    background-color: rgba(58, 153, 242, 0.3);
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    bottom: 100%;
 }
 
 /* --- Main Content --- */
 
 .president {
-    max-width: 100%;
+    max-width: 60%;
     margin-top: 18px;
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.5), 0 17px 50px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5), 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
 .main-content {
