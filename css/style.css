@@ -67,7 +67,6 @@ header {
 
 .main-nav {
     position: relative;
-    display: inline-block;
 }
 
 .nav-button {
@@ -76,21 +75,21 @@ header {
     font-size: 20px;
     color: #1e4966;
     border: none;
+    width: 100%;
     cursor: pointer;
 }
 
 .nav {
     display: none;
-    text-align: left;
     position: absolute;
-    background-color: #b5dbff;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    background-color: #ccdfff;
+    min-width: 100%;
     z-index: 1;
+    padding: 28px 0;
 }
 
 .nav a {
-    color: black;
+    min-width: 100%;
     padding: 12px 16px;
     text-decoration: none;
 }
