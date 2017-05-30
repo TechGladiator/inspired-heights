@@ -65,6 +65,11 @@ header {
 
 /* --- Footer --- */
 
+.main-nav {
+    position: relative;
+    display: inline-block;
+}
+
 .nav-button {
     background-color: rgba(0, 0, 0, 0);
     font-family: 'Anton', sans-serif;
@@ -72,11 +77,6 @@ header {
     color: #1e4966;
     border: none;
     cursor: pointer;
-}
-
-.main-nav {
-    position: relative;
-    display: inline-block;
 }
 
 .nav {
