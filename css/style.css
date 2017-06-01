@@ -26,13 +26,22 @@ a:hover {
 ul {
     list-style: none;
     padding: inherit;
-    margin: 0;
+  margin: 0;
 }
 
 /* --- Main Header and Logo --- */
 
 header {
+    display: flex;
+/*    flex-direction: row-reverse;*/
+/*    align-items: center;*/
+    justify-content: space-between;    
+/*    height: 75px;*/
     background: url(../design/images/bg.jpg) top center no-repeat;
+    box-shadow: 0 1px 16px 0 rgba(0,0,0,0.18);
+    position: fixed;
+    width: 100%;
+    top: 0;
 }
 
 .top-wrap {
@@ -40,8 +49,8 @@ header {
 }
 
 .logo {
-    display: flex;
-    flex-direction: column;
+/*    display: flex;*/
+/*    flex-direction: column;*/
     font-family: 'Anton', sans-serif;
     font-size: 14px;
 }
@@ -63,27 +72,25 @@ header {
     font-size: 1.2em;
 }
 
-/* --- Footer --- */
+.nav-button div {
+  width: 35px;
+  height: 5px;
+  background-color: #1e4966;
+  margin: 15px 0;
+}
 
 .main-nav {
     position: relative;
-}
-
-.nav-button {
-    background-color: rgba(0, 0, 0, 0);
-    font-family: 'Anton', sans-serif;
-    font-size: 20px;
-    color: #1e4966;
-    border: none;
-    width: 100%;
-    cursor: pointer;
+    display: inline-block;
 }
 
 .nav {
     display: none;
+/*    text-align: left;*/
     position: absolute;
-    background-color: #ccdfff;
-    min-width: 100%;
+    background-color: #b5dbff;
+    min-width: 320px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
     padding: 28px 0;
 }
@@ -100,7 +107,6 @@ header {
 
 .main-nav:hover .nav {
     display: block;
-    bottom: 100%;
 }
 
 /* --- Main Content --- */
@@ -108,7 +114,7 @@ header {
 .president {
     max-width: 60%;
     margin-top: 18px;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5), 0 4px 8px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 2px 8px 0 rgba(0,0,0,0.5), 0 2px 8px 0 rgba(0,0,0,0.2);
 }
 
 .main-content {
