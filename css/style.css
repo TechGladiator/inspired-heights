@@ -7,21 +7,23 @@
 body {
     text-align: center;
     font-family: 'Khula', sans-serif;
-    color: #3b4251;
-    background: #ccdfff;
-  margin-top: 75px;
+    color: #0a2856;
+    background: url(../images/clouds-295695_1920.jpg) center #ccdfff;
+  margin-top: 3.55em;
+/*  background: url(../images/clouds-295695_1920.jpg) center;*/
+  background-size: cover;
 }
 
 a {
     display: block;
     text-decoration: none;
-    color: #3b4251;
+    color: #061384;
     transition-duration: 0.4s;
 }
 
 a:hover {
     text-decoration: underline;
-    color: #9a98a0;
+    color: #cee1ff;
 }
 
 ul {
@@ -30,16 +32,39 @@ ul {
   margin: 0;
 }
 
+/* --- navbar --- */
+
+.navbar {
+  background: url(../images/cloud-97453_1920.jpg) center #ccdfff;
+  background-size: cover;
+}
+
+.navbar-default, .navbar-default .navbar-collapse {
+  border-color: transparent;
+}
+
+.navbar-fixed-top .navbar-collapse {
+  max-height: none;
+}
+
 /* --- Logo --- */
 
+.navbar-brand {
+  padding: 0;
+}
+
 .main-logo, .sub-logo, .phone {
-    color: #1e4966;
+    color: #022b47;
   margin: 0;
   text-align: left;
 }
 
 .main-logo, .sub-logo {
   font-family: 'Anton', sans-serif;
+}
+
+.main-logo {
+  font-size: 1.4em;
 }
 
 .logo {
@@ -49,12 +74,14 @@ ul {
 }
 
 .sub-logo {
-    font-size: 10px;
+    font-size: .5em;
 }
 
 .phone {
 /*    margin-top: 10px;*/
-  line-height: 25px;
+/*  line-height: 25px;*/
+  font-size: .67em;
+  font-weight: 900
 }
 
 .phone strong {
