@@ -70,6 +70,16 @@ ul {
 }
 
 
+/* --- menu --- */
+
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:hover,
+.navbar-default .navbar-nav>.active>a:focus {
+  color: inherit;
+  background-color: rgba(10, 40, 86, .3);
+}
+
+
 /* --- logo --- */
 
 .navbar-brand {
