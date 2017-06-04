@@ -1,4 +1,4 @@
-/* --- Base Styles --- */
+/* --- base styles --- */
 
 * {
   box-sizing: border-box;
@@ -27,7 +27,7 @@ a:hover {
 
 ul {
   list-style: none;
-  padding: inherit;
+  padding: 0;
   margin: 0;
 }
 
@@ -70,7 +70,7 @@ ul {
 }
 
 
-/* --- Logo --- */
+/* --- logo --- */
 
 .navbar-brand {
   padding: 0;
@@ -107,7 +107,7 @@ ul {
 }
 
 
-/* --- Main Content --- */
+/* --- main content --- */
 
 .president {
   max-width: 60%;
@@ -126,13 +126,10 @@ ul {
 }
 
 
-/* --- Titlebar --- */
+/* --- titlebar --- */
 
 .titlebar {
   margin: 10px 20px 0;
   font-weight: bold;
   text-align: center;
 }
-
-
-/* --- Media Queries --- */
