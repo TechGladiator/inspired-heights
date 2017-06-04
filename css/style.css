@@ -37,6 +37,7 @@ ul {
 .navbar {
   background: url(../images/cloud-97453_1920.jpg) center #ccdfff;
   background-size: cover;
+  box-shadow: 0px 2px 5px -1px rgba(0, 0, 0, 0.75);
 }
 
 .navbar-default,
@@ -46,6 +47,26 @@ ul {
 
 .navbar-fixed-top .navbar-collapse {
   max-height: none;
+}
+
+
+/* --- navbar button --- */
+
+.navbar-default .navbar-toggle {
+  border-color: #0a2856;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #0a2856;
+}
+
+.navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-toggle:hover {
+  background-color: rgba(0, 0, 255, .2);
+}
+
+.navbar-toggle {
+  margin-right: 10px;
 }
 
 
@@ -91,7 +112,7 @@ ul {
 .president {
   max-width: 60%;
   margin-top: 18px;
-  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.5), 0 2px 8px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 5px 2px rgba(0, 0, 0, 0.6);
 }
 
 .main-content {
