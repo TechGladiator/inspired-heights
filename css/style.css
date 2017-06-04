@@ -1,35 +1,36 @@
 /* --- Base Styles --- */
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    text-align: center;
-    font-family: 'Khula', sans-serif;
-    color: #0a2856;
-    background: url(../images/clouds-295695_1920.jpg) center #ccdfff;
+  text-align: center;
+  font-family: 'Khula', sans-serif;
+  color: #0a2856;
+  background: url(../images/clouds-295695_1920.jpg) center #ccdfff;
   margin-top: 3.55em;
   background-size: cover;
 }
 
 a {
-    display: block;
-    text-decoration: none;
-    color: #061384;
-    transition-duration: 0.4s;
+  display: block;
+  text-decoration: none;
+  color: #061384;
+  transition-duration: 0.4s;
 }
 
 a:hover {
-    text-decoration: underline;
-    color: #cee1ff;
+  text-decoration: underline;
+  color: #cee1ff;
 }
 
 ul {
-    list-style: none;
-    padding: inherit;
+  list-style: none;
+  padding: inherit;
   margin: 0;
 }
+
 
 /* --- navbar --- */
 
@@ -38,7 +39,8 @@ ul {
   background-size: cover;
 }
 
-.navbar-default, .navbar-default .navbar-collapse {
+.navbar-default,
+.navbar-default .navbar-collapse {
   border-color: transparent;
 }
 
@@ -46,19 +48,23 @@ ul {
   max-height: none;
 }
 
+
 /* --- Logo --- */
 
 .navbar-brand {
   padding: 0;
 }
 
-.main-logo, .sub-logo, .phone {
-    color: #022b47;
+.main-logo,
+.sub-logo,
+.phone {
+  color: #022b47;
   margin: 0;
   text-align: left;
 }
 
-.main-logo, .sub-logo {
+.main-logo,
+.sub-logo {
   font-family: 'Anton', sans-serif;
 }
 
@@ -67,7 +73,7 @@ ul {
 }
 
 .sub-logo {
-    font-size: .5em;
+  font-size: .5em;
 }
 
 .phone {
@@ -76,33 +82,36 @@ ul {
 }
 
 .phone strong {
-    font-size: 1.2em;
+  font-size: 1.2em;
 }
+
 
 /* --- Main Content --- */
 
 .president {
-    max-width: 60%;
-    margin-top: 18px;
-    box-shadow: 0 2px 8px 0 rgba(0,0,0,0.5), 0 2px 8px 0 rgba(0,0,0,0.2);
+  max-width: 60%;
+  margin-top: 18px;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.5), 0 2px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .main-content {
-    margin: 10px;
-    text-align: justify;
-    font-size: 18px;
+  margin: 10px;
+  text-align: justify;
+  font-size: 18px;
 }
 
 .services {
-    text-align: center;
+  text-align: center;
 }
+
 
 /* --- Titlebar --- */
 
 .titlebar {
-    margin: 10px 20px 0;
-    font-weight: bold;
-    text-align: center;
+  margin: 10px 20px 0;
+  font-weight: bold;
+  text-align: center;
 }
+
 
 /* --- Media Queries --- */
