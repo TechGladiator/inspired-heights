@@ -75,8 +75,17 @@ ul {
 .navbar-default .navbar-nav>.active>a,
 .navbar-default .navbar-nav>.active>a:hover,
 .navbar-default .navbar-nav>.active>a:focus {
-  color: inherit;
+  color: #74a5ec;
   background-color: rgba(10, 40, 86, .3);
+}
+
+.navbar-default .navbar-nav>li>a:hover,
+.navbar-default .navbar-nav>li>a:focus {
+  color: #dce1e6;
+}
+
+.navbar-default .navbar-nav>li>a {
+  color: #93a4c0;
 }
 
 
