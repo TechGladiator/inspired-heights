@@ -129,6 +129,17 @@ ul {
 }
 
 
+/* --- slideshow --- */
+
+.bss-prev {
+  padding: 15px 10px 10px 5px;
+}
+
+.bss-next {
+  padding: 15px 5px 10px 10px;
+}
+
+
 /* --- main content --- */
 
 .president {
