@@ -56,6 +56,10 @@ ul {
   margin-bottom: 100%;
 }
 
+.container>.navbar-header {
+  margin: 0;
+}
+
 
 /* --- navbar button --- */
 
@@ -131,7 +135,7 @@ ul {
 /* --- logo --- */
 
 .navbar-brand {
-  padding: 0;
+  padding: 0 0 0 3px;
 }
 
 .main-logo,
