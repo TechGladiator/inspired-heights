@@ -9,7 +9,7 @@ body {
   text-align: center;
   font-family: 'Khula', sans-serif;
   color: #0a2856;
-  background: url(../images/clouds-295695_1920.jpg) center #ccdfff;
+  background: url(../images/clouds-295695_1920.jpg) top center no-repeat #ccdfff;
   margin-top: 3.67em;
   background-size: cover;
 }
@@ -37,8 +37,8 @@ ul {
 /* --- navbar --- */
 
 .navbar {
-  background: url(../images/cloud-97453_1920.jpg) center top #ccdfff;
-  background-size: 300%;
+  background: url(../images/cloud-97453_1920.jpg) center top no-repeat #ccdfff;
+  background-size: auto 736px;
   -webkit-box-shadow: 0px 2px 5px -1px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 2px 5px -1px rgba(0, 0, 0, 0.75);
 }
@@ -50,14 +50,17 @@ ul {
 
 .navbar-fixed-top .navbar-collapse {
   max-height: none;
-  height: 568px;
+}
+
+.navbar-nav {
+  margin-bottom: 100%;
 }
 
 
 /* --- navbar button --- */
 
 .navbar-default .navbar-toggle {
-  border-color: #0a2856;
+  border-color: transparent;
 }
 
 .navbar-default .navbar-toggle .icon-bar {
@@ -66,11 +69,43 @@ ul {
 
 .navbar-default .navbar-toggle:focus,
 .navbar-default .navbar-toggle:hover {
-  background-color: rgba(0, 0, 255, .2);
+  background-color: transparent;
 }
 
 .navbar-toggle {
   margin-right: 10px;
+}
+
+
+/* set animation speed for bars */
+
+.bar1,
+.bar2,
+.bar3 {
+  transition: 0.4s;
+}
+
+
+/* rotate bar1 */
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-5px, 4px);
+}
+
+
+/* fade out bar2 */
+
+.change .bar2 {
+  opacity: 0;
+}
+
+
+/* rotate bar3 */
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-4px, -4px);
 }
 
 
@@ -146,7 +181,7 @@ ul {
 }
 
 
-/* the dots/bullets/indicators */
+/* the dot indicators */
 
 .dot {
   height: 13px;
