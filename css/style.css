@@ -60,6 +60,10 @@ ul {
   margin: 0;
 }
 
+.navbar-collapse {
+  box-shadow: none;
+}
+
 
 /* --- navbar button --- */
 
