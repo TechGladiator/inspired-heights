@@ -59,6 +59,7 @@ ul {
 }
 
 .navbar-collapse {
+  -webkit-box-shadow: none;
   box-shadow: none;
 }
 
@@ -92,6 +93,7 @@ ul {
 .bar1,
 .bar2,
 .bar3 {
+  -webkit-transition: 0.4s;
   transition: 0.4s;
 }
 
@@ -203,6 +205,7 @@ ul {
   background-color: #9fd0f5;
   border-radius: 50%;
   display: inline-block;
+  -webkit-transition: background-color 0.6s ease;
   transition: background-color 0.6s ease;
 }
 
