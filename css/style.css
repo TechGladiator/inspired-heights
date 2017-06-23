@@ -84,7 +84,9 @@ ul {
 }
 
 .navbar-toggle {
+  margin-top: 10px;
   margin-right: -2px;
+  padding: 7px 8px;
 }
 
 
