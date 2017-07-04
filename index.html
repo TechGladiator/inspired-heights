@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
+<head>
 
   <meta charset="UTF-8">
 
@@ -16,6 +16,9 @@
 
   <!-- Bootstrap -->
   <link href="css/bootstrap.css" rel="stylesheet">
+
+  <!--  Simple Slideshow  -->
+  <link href="css/simple-slideshow-styles.css" rel="stylesheet">
 
   <link rel="stylesheet" media="screen" href="css/style.css">
 
@@ -69,45 +72,23 @@
     </div>
   </nav>
 
-  <div class="slideshow-container">
-    <div class="mySlides fader">
-      <a href="#">
-        <img src="images/Banner_Steeple.jpg" style="width:100%">
-      </a>
-    </div>
+  <div class="bss-slides">
+    <figure>
+      <img src="images/Banner_Steeple.jpg" width="100%" />
+    </figure>
+    <figure>
+      <img src="images/Banner_Roofs.jpg" width="100%" />
+    </figure>
+    <figure>
+      <img src="images/Banner_Masonry.jpg" width="100%" />
+    </figure>
+    <figure>
+      <img src="images/Banner_Windows.jpg" width="100%" />
+    </figure>
+    <figure>
+      <img src="images/Banner_Interiors.jpg" width="100%" />
+    </figure>
 
-    <div class="mySlides fader">
-      <a href="#">
-        <img src="images/Banner_Roofs.jpg" style="width:100%">
-      </a>
-    </div>
-
-    <div class="mySlides fader">
-      <a href="#">
-        <img src="images/Banner_Masonry.jpg" style="width:100%">
-      </a>
-    </div>
-
-    <div class="mySlides fader">
-      <a href="#">
-        <img src="images/Banner_Windows.jpg" style="width:100%">
-      </a>
-    </div>
-
-    <div class="mySlides fader">
-      <a href="#">
-        <img src="images/Banner_Interiors.jpg" style="width:100%">
-      </a>
-    </div>
-  </div>
-  <br>
-
-  <div style="text-align:center">
-    <span class="dot"></span>
-    <span class="dot"></span>
-    <span class="dot"></span>
-    <span class="dot"></span>
-    <span class="dot"></span>
   </div>
 
   <div>
@@ -188,8 +169,12 @@
 
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <!-- Hammer.js (necessary for Simple slideshow) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/hammerjs/2.0.8/hammer.min.js"></script>
   <!-- Include all compiled plugins (below), or include individual files as needed -->
   <script src="js/bootstrap.js"></script>
+  <!-- Simple Slideshow javascript -->
+  <script src="js/better-simple-slideshow.min.js"></script>
   <script src="js/main.js"></script>
 
 </body>

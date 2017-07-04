@@ -1,36 +1,22 @@
-// slide show
+// customize slideshow
+var opts = {
+  // default selector is "figure"
+  selector: ".my-selector",
+  //auto-advancing slides? accepts boolean (true/false) or object
+  auto: {
+    // speed to advance slides at. accepts number of milliseconds
+    speed: 2500,
+    // pause advancing on mouseover? accepts boolean
+    pauseOnHover: true
+  },
+  // show fullscreen toggle? accepts boolean
+  fullScreen: false,
+  // support swiping on touch devices? accepts boolean, requires hammer.js
+  swipe: true
+};
 
-var slideIndex = 0; // sets initial slide index
-
-// create slideshow
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides"); // gets the images
-  var dots = document.getElementsByClassName("dot"); // gets the dot divs
-
-  // cycles through images and changes class to hide
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  slideIndex++; // updates the slide index
-
-  // cycles through dot divs and changes class to deselect
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" selected", "");
-  }
-  // sets index to show selected slide
-  if (slideIndex > slides.length) {
-    slideIndex = 1;
-  }
-  // shows selected image
-  slides[slideIndex - 1].style.display = "block";
-  // changes dot div class to match image
-  dots[slideIndex - 1].className += " selected";
-  setTimeout(showSlides, 3000); // waits 3 seconds to transistion to next slide
-}
-
-// call the slideshow function and gets initial slide index
-showSlides(slideIndex);
+// initialize slideshow
+makeBSS('.bss-slides', opts);
 
 // toggle hamburger menu animation
 function hamburger(x) {
