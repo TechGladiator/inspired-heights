@@ -17,3 +17,8 @@ var opts = {
 
 // initialize slideshow
 makeBSS('.bss-slides', opts);
+
+// toggle hamburger menu animation
+function hamburger(x) {
+  x.classList.toggle("change");
+}
