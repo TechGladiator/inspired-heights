@@ -10,7 +10,7 @@ body {
   font-family: 'Khula', sans-serif;
   color: #0a2856;
   background: url(../images/clouds-295695_1920.jpg) top center no-repeat #ccdfff;
-  margin-top: 3.67em;
+  margin-top: 3.86em;
   background-size: cover;
 }
 
@@ -48,12 +48,23 @@ ul {
   border-color: transparent;
 }
 
-.navbar-fixed-top .navbar-collapse {
-  max-height: none;
-}
-
 .navbar-nav {
   margin-bottom: 100%;
+  font-size: x-large;
+  font-weight: bold;
+}
+
+.container>.navbar-header {
+  margin: 0;
+}
+
+.navbar-collapse {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.nav>li {
+  padding: 2px;
 }
 
 
@@ -73,7 +84,9 @@ ul {
 }
 
 .navbar-toggle {
-  margin-right: 10px;
+  margin-top: 10px;
+  margin-right: -2px;
+  padding: 7px 8px;
 }
 
 
@@ -82,6 +95,7 @@ ul {
 .bar1,
 .bar2,
 .bar3 {
+  -webkit-transition: 0.4s;
   transition: 0.4s;
 }
 
@@ -125,13 +139,15 @@ ul {
 
 .navbar-default .navbar-nav>li>a {
   color: #93a4c0;
+  text-shadow: 0 3px 3px black;
 }
 
 
 /* --- logo --- */
 
 .navbar-brand {
-  padding: 0;
+  padding: 0 0 0 1px;
+  height: 54px;
 }
 
 .main-logo,
@@ -145,6 +161,7 @@ ul {
 .main-logo,
 .sub-logo {
   font-family: 'Anton', sans-serif;
+  padding-bottom: 1px;
 }
 
 .main-logo {
@@ -152,11 +169,11 @@ ul {
 }
 
 .sub-logo {
-  font-size: .5em;
+  font-size: .54em;
 }
 
 .phone {
-  font-size: .67em;
+  font-size: .9em;
   font-weight: 900
 }
 
@@ -190,6 +207,7 @@ ul {
   background-color: #9fd0f5;
   border-radius: 50%;
   display: inline-block;
+  -webkit-transition: background-color 0.6s ease;
   transition: background-color 0.6s ease;
 }
 
