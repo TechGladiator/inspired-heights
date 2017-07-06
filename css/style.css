@@ -1,0 +1,52 @@
+/*--- Base Styles ---*/
+
+body {
+  font-family: 'Khula', sans-serif;
+  padding-top: 75px;
+}
+
+
+/*--- Navbar  ---*/
+
+
+/*--- Logo  ---*/
+
+.logo {
+  padding: 5px 0 0 1px;
+  height: 100%;
+}
+
+.main-logo,
+.sub-logo {
+  font-family: 'Anton', sans-serif;
+}
+
+.main-logo {
+  font-size: 1.4em;
+}
+
+.sub-logo {
+  font-size: .54em;
+}
+
+.phone {
+  font-size: .9em;
+}
+
+.phone strong {
+  font-size: 1.2em;
+}
+
+
+/*--- Menu ---*/
+
+.navbar-fixed-top .main-menu {
+  max-height: 100%;
+  border-color: transparent;
+}
+
+/*--- Menu Button ---*/
+
+.hamburger {
+  top: 10px;
+}
