@@ -26,11 +26,11 @@ body {
 }
 
 .sub-logo {
-  font-size: .54em;
+  font-size: .52em;
 }
 
 .phone {
-  font-size: .9em;
+  font-size: .7em;
 }
 
 .phone strong {
@@ -45,8 +45,21 @@ body {
   border-color: transparent;
 }
 
+
 /*--- Menu Button ---*/
 
 .hamburger {
   top: 10px;
+}
+
+
+/*--- Media Queries ---*/
+
+@media screen and (min-width: 375px) {
+  .sub-logo {
+    font-size: .54em;
+  }
+  .phone {
+    font-size: .9em;
+  }
 }
