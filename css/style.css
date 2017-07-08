@@ -59,6 +59,10 @@ body {
 .welcome {
   font-family: 'Anton', sans-serif;
   font-size: 1.5em;
+  position: absolute;
+  z-index: 1;
+  top: 75px;
+  width: 100%;
 }
 
 
