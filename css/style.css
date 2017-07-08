@@ -49,16 +49,22 @@ body {
 }
 
 
-/*--- Jumbotron ---*/
-
-.jumbotron {
-  padding-top: 10px;
-  padding-bottom: 0;
-}
+/*--- Welcome Heading ---*/
 
 .welcome {
   font-family: 'Anton', sans-serif;
   font-size: 1.5em;
+  height: 0;
+}
+
+.welcome h2, h3 {
+  position: relative;
+  z-index: 1;
+  top: -157px;
+}
+
+.welcome h3 {
+  top: -100px;
 }
 
 
