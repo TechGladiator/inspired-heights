@@ -3,6 +3,7 @@
 body {
   font-family: 'Khula', sans-serif;
   padding-top: 75px;
+  font-size: 16px;
 }
 
 
@@ -48,15 +49,33 @@ body {
 }
 
 
-/*--- Carousel ---*/
+/*--- Jumbotron ---*/
 
-#services-carousel {
-  max-width: 693px;
-  margin: auto;
+.jumbotron {
+  padding-top: 10px;
+  padding-bottom: 0;
+}
+
+.welcome {
+  font-family: 'Anton', sans-serif;
+  font-size: 1.5em;
+}
+
+
+/*--- Main Content ---*/
+
+.president {
+  margin-bottom: 30px;
 }
 
 
 /*--- Media Queries ---*/
+
+@media (min-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+}
 
 @media (min-height: 480px) {
   .navbar-fixed-top .main-menu {
