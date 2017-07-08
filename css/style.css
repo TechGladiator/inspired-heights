@@ -78,6 +78,13 @@ body {
 
 /*--- Media Queries ---*/
 
+@media (max-device-width: 767px) and (orientation: landscape) {
+  .navbar-fixed-top .navbar-collapse,
+  .navbar-fixed-bottom .navbar-collapse {
+    max-height: 200px;
+  }
+}
+
 @media (min-width: 768px) {
   body {
     font-size: 14px;
