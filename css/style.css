@@ -65,6 +65,7 @@ body {
 /*--- Main Content ---*/
 
 .president {
+  max-width: 65.5%;
   margin-bottom: 30px;
 }
 
