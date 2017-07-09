@@ -44,13 +44,19 @@ body {
 }
 
 
-/*--- Menu ---*/
+/*--- Navbar Button ---*/
 
-
-/*--- Menu Button ---*/
-
-.hamburger {
+.top-navbar .hamburger {
   top: 10px;
+  border-color: rgba(0, 0, 0, 0);
+}
+
+.top-navbar .hamburger:focus, .top-navbar .hamburger:hover {
+  background-color: rgba(150, 157, 184, 0.4);
+}
+
+.top-navbar .hamburger .bars {
+  background-color: #1f477e;
 }
 
 
