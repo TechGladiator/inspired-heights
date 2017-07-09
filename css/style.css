@@ -51,8 +51,8 @@ body {
 
 /*--- Jumbotron ---*/
 
-.jumbotron {
-  padding-top: 10px;
+.jumbo {
+  padding-top: 0;
   padding-bottom: 0;
 }
 
