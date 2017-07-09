@@ -2,25 +2,23 @@
 <html lang="en">
 
 <head>
-
-  <meta charset="UTF-8">
-
+  <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <meta name="description" content="">
-  <meta name="author" content="">
-
-  <title>Church &amp; Church Steeple Maintenance, Repair, &amp; Restoration</title>
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>Church &amp; Steeple Maintenance, Repair, &amp; Restoration</title>
 
   <!-- Bootstrap -->
-  <link href="css/bootstrap.css" rel="stylesheet">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
 
-  <!--  Simple Slideshow  -->
-  <link href="css/simple-slideshow-styles.css" rel="stylesheet">
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
 
-  <link rel="stylesheet" media="screen" href="css/style.css">
+  <link href="css/style.css" rel="stylesheet" media="screen">
 
   <link href="https://fonts.googleapis.com/css?family=Anton|Khula" rel="stylesheet">
 
@@ -28,155 +26,173 @@
 
 <body>
 
-  <!-- Fixed navbar -->
+  <!-- Navbar -->
+
   <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container">
+
+      <!-- Brand and toggle get grouped for better mobile display -->
       <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar" onclick="hamburger(this)">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar bar1"></span>
-            <span class="icon-bar bar2"></span>
-            <span class="icon-bar bar3"></span>
-          </button>
-        <div>
-          <a class="navbar-brand" href="#">
-
-
-            <h1 class="main-logo">Inspired Heights, Inc.</h1>
-            <h2 class="sub-logo">Nationwide Church and Steeple Maintenance, Repair, &amp; Restoration</h2>
-
-
-            <div class="phone">
-
-              <span>Give us a call at: <strong>1-815-227-9281</strong></span>
-
-            </div>
-
-          </a>
-        </div>
+        <button type="button" class="hamburger navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+        <a class="navbar-brand logo" href="#">
+          <span class="main-logo">Inspired Heights, Inc.</span>
+          <br>
+          <span class="sub-logo">Nationwide Church and Steeple Maintenance, Repair, &amp; Restoration</span>
+          <br>
+          <span class="phone">Give us a call at: <strong>1-815-227-9281</strong></span></a>
       </div>
-      <div id="navbar" class="navbar-collapse collapse">
-        <ul class="nav navbar-nav">
-          <li class="active"><a href="#">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li><a href="#">Church Steeples</a></li>
-          <li><a href="#">Church Roofs</a></li>
-          <li><a href="#">Mason/Stone Restoration</a></li>
-          <li><a href="#">Church Windows</a></li>
-          <li><a href="#">Church Interiors</a></li>
-          <li><a href="#">Mentorship Program</a></li>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse main-menu" id="navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Church Steeples</a></li>
+              <li><a href="#">Church Roofs</a></li>
+              <li><a href="#">Mason/Stone Restoration</a></li>
+              <li><a href="#">Church Windows</a></li>
+              <li><a href="#">Church Interiors</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">Mentorship Program</a></li>
+            </ul>
+          </li>
         </ul>
       </div>
-      <!--/.nav-collapse -->
+
     </div>
+    <!-- /.container -->
   </nav>
+  <!-- End Navbar -->
 
-  <div class="bss-slides">
-    <figure>
-      <img src="images/Banner_Steeple.jpg" width="100%" />
-    </figure>
-    <figure>
-      <img src="images/Banner_Roofs.jpg" width="100%" />
-    </figure>
-    <figure>
-      <img src="images/Banner_Masonry.jpg" width="100%" />
-    </figure>
-    <figure>
-      <img src="images/Banner_Windows.jpg" width="100%" />
-    </figure>
-    <figure>
-      <img src="images/Banner_Interiors.jpg" width="100%" />
-    </figure>
 
+  <!-- Jumbotron -->
+
+  <div class="jumbotron">
+
+    <!-- Carousel -->
+
+    <div id="services-carousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators hidden-xs">
+        <li data-target="#services-carousel" data-slide-to="0" class="active"></li>
+        <li data-target="#services-carousel" data-slide-to="1"></li>
+        <li data-target="#services-carousel" data-slide-to="2"></li>
+        <li data-target="#services-carousel" data-slide-to="3"></li>
+        <li data-target="#services-carousel" data-slide-to="4"></li>
+      </ol>
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <img src="images/Banner_Steeple.jpg" alt="Steeples" width="100%">
+        </div>
+        <div class="item">
+          <img src="images/Banner_Roofs.jpg" alt="Roofs" width="100%">
+        </div>
+        <div class="item">
+          <img src="images/Banner_Masonry.jpg" alt="Masonry" width="100%">
+        </div>
+        <div class="item">
+          <img src="images/Banner_Windows.jpg" alt="Windows" width="100%">
+        </div>
+        <div class="item">
+          <img src="images/Banner_Interiors.jpg" alt="Interiors" width="100%">
+        </div>
+      </div>
+
+      <!-- Controls -->
+      <a class="left carousel-control hidden-xs" href="#services-carousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control hidden-xs" href="#services-carousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+
+    <div class="text-center welcome">
+      <h2>Inspired Heights</h2>
+      <h3>Church &amp; Steeple Contractors</h3>
+    </div>
+
+    <!-- End Carousel -->
   </div>
+  
+  <!-- End Jumbotron -->
 
-  <div>
+  <!-- Container -->
+  <div class="container">
+    <!-- Main Content -->
 
-    <img class="president" src="images/tony_stratton.jpg" alt="Tony Stratton, steeplejack, church steeple repairs and church restoration">
+    <div class="row">
 
-  </div>
+      <div class="col-md-4 col-md-push-4">
+        <img class="img-rounded center-block president" src="images/tony_stratton.jpg" alt="Tony Stratton, President">
+      </div>
 
-  <div class="main-content">
+      <div class="col-md-4 col-md-pull-4">
+        <p class="text-justify">My name is Tony Stratton and I am the president of Inspired Heights as well as a third generation steeplejack. Following the traditions and craftsmanship of our forefathers my team and I are dedicated to the preservation of churches.</p>
 
-    <div class="primary col">
+        <p class="text-justify">The trained steeplejacks of Inspired Heights can offer affordable, less intrusive, solutions for the unique needs of your church. This specialized training allows the church restoration professionals of Inspired Heights to access what may be inaccessable to most other tradesmen.</p>
 
-      <div class="titlebar">
+        <p class="text-justify">In addition to our steeplejack services, the diversified team of artisans from Inspired Heights can skillfully perform your interior and exterior church repairs and renovations. We are your church restoration specialists!</p>
+      </div>
 
-        <span>Welcome to Inspired Heights - Church &amp; Church Steeple Contractors</span><br>
+      <div class="col-md-4">
+
+        <p class="text-justify">Our church maintenance, repair and restoration services include:</p>
+
+        <ul class="list-unstyled text-center">
+          <li><a href="#">Steeple Repair</a></li>
+          <li><a href="#">Church Roofs</a></li>
+          <li><a href="#">Church Windows</a></li>
+          <li><a href="#">Interior Church Renovation</a></li>
+          <li><a href="#">Mason/Stone Restoration</a></li>
+        </ul>
+
+        <blockquote class="text-justify"><em>"Work willingly at whatever you do, as though you were working for the Lord rather than for people." <a href="https://www.bible.com/bible/116/COL.3.23.nlt" target="_blank"><abbr title="Colossians">Col</abbr> 3:23</a></em></blockquote>
 
       </div>
 
-      <p>My name is Tony Stratton and I am the president of Inspired Heights as well as a third generation steeplejack. Following the traditions and craftsmanship of our forefathers my team and I are dedicated to the preservation of churches.</p>
-
-      <p>The trained steeplejacks of Inspired Heights can offer affordable, less intrusive, solutions for the unique needs of your church. This specialized training allows the church restoration professionals of Inspired Heights to access what may be inaccessable to most other tradesmen.</p>
-
-      <p>In addition to our steeplejack services, the diversified team of artisans from Inspired Heights can skillfully perform your interior and exterior church repairs and renovations. We are your church restoration specialists!</p>
-
-      <p>Our church maintenance, repair and restoration services include:</p>
-
     </div>
 
-    <div class="services">
+    <div class="row">
+      <div class="col-md-6">
+        <p class="text-justify">If your church requires the expertise of a steeplejack company or the craftsmanship of artisans specialized in church renovation then you need the church and church steeple repair and restoration experts of Inspired Heights.</p>
 
-      <ul>
+        <p class="hidden-xs text-justify">Inspired Heights is a steeplejack company that specializes in church and church steeple preservation. From church renovation to church steeple repairs Inspired Heights is your church and church steeple restoration specialists. We are located near Chicago, IL and Milwaukee, WI but we provide our steeplejack services nationwide. In addition to our steeplejack services we provide complete interior and exterior church renovation. These services include church steeples, church towers, church spires, steeple roofs, church roofs, roof repairs, roof installation, slate roof, tile roof, historic roofs, church windows, stained glass windows, church window repairs, church window restoration, church stone masonry, stone restoration, mason repairs, tuck pointing, church sanctuary, church plaster repair, church ceilings, church painting, gold leafing, gilding, liturgical art, murals and interior church renovations.</p>
+      </div>
 
-        <li><strong><a href="church-steeples.html" title="Steeple Repair">Steeple Repair</a></strong></li>
-
-        <li><strong><a href="church-roofs.html" title="Church Roofs">Church Roofs</a></strong></li>
-
-        <li><strong><a href="church-windows.html" title="Church Windows">Church Windows</a></strong></li>
-
-        <li><strong><a href="church-interiors.html" title="Interior Church Renovation">Interior Church Renovation</a></strong></li>
-
-        <li><strong><a href="mason_stone-restoration.html" title="Mason/Stone Restoration">Mason/Stone Restoration</a></strong></li>
-
-      </ul>
-
+      <div class="col-md-6">
+        <p class="hidden-xs text-justify">Our church restoration and renovation services are offered nationwide, including the following cities: New York, NY - Los Angeles, CA - Chicago, IL - Houston, TX - Philadelphia, PA - San Diego, CA - Detroit, MI - Dallas, TX - Phoenix, AZ - San Antonio, TX - San Jose, CA - Baltimore, MD - Indianapolis, IN - San Francisco, CA - Jacksonville, FL - Columbus, OH - Milwaukee, WI - Memphis, TN - Washington, DC - Boston, MA - Seattle, WA - St. Louis, MO - Atlanta, GA - Pittsburgh, PA - Minneapolis, MN - Miami, FL - Tampa, FL. We provide our church and church steeple maintenance and repairs in all 50 states: Alabama, Alaska, Arizona, Arkansas, California, Colorado, Connecticut, Delaware, Florida, Georgia, Hawaii, Idaho, Illinois, Indiana, Iowa, Kansas, Kentucky, Louisiana, Maine, Maryland, Massachusetts, Michigan, Minnesota, Mississippi, Missouri, Montana, Nebraska, Nevada, New Hampshire, New Jersey, New Mexico, New York, North Carolina, North Dakota, Ohio, Oklahoma, Oregon, Pennsylvania, Rhode Island, South Carolina, South Dakota, Tennessee, Texas, Utah, Vermont, Virginia, Washington, West Virginia, Wisconsin, Wyoming.</p>
+      </div>
     </div>
 
-    <div class="titlebar">
+    <!-- End Main Content -->
 
-      <span><em>Work willingly at whatever you do, as though you were working for the Lord rather than for people. Col 3:23</em></span>
+    <!-- Footer -->
 
-    </div>
+    <p class="text-center">All content &copy; Inspired Heights, Inc.</p>
 
-    <div class="secondary col">
-
-      <p>If your church requires the expertise of a steeplejack company or the craftsmanship of artisans specialized in church renovation then you need the church and church steeple repair and restoration experts of Inspired Heights.</p>
-
-      <p>Inspired Heights is a steeplejack company that specializes in church and church steeple preservation. From church renovation to church steeple repairs Inspired Heights is your church and church steeple restoration specialists. We are located near Chicago, IL and Milwaukee, WI but we provide our steeplejack services nationwide. In addition to our steeplejack services we provide complete interior and exterior church renovation. These services include church steeples, church towers, church spires, steeple roofs, church roofs, roof repairs, roof installation, slate roof, tile roof, historic roofs, church windows, stained glass windows, church window repairs, church window restoration, church stone masonry, stone restoration, mason repairs, tuck pointing, church sanctuary, church plaster repair, church ceilings, church painting, gold leafing, gilding, liturgical art, murals and interior church renovations.</p>
-
-    </div>
-
-    <div class="tertiary col">
-
-      <p>Our church restoration and renovation services are offered nationwide, including the following cities: New York, NY - Los Angeles, CA - Chicago, IL - Houston, TX - Philadelphia, PA - San Diego, CA - Detroit, MI - Dallas, TX - Phoenix, AZ - San Antonio, TX - San Jose, CA - Baltimore, MD - Indianapolis, IN - San Francisco, CA - Jacksonville, FL - Columbus, OH - Milwaukee, WI - Memphis, TN - Washington, DC - Boston, MA - Seattle, WA - St. Louis, MO - Atlanta, GA - Pittsburgh, PA - Minneapolis, MN - Miami, FL - Tampa, FL. We provide our church and church steeple maintenance and repairs in all 50 states: Alabama, Alaska, Arizona, Arkansas, California, Colorado, Connecticut, Delaware, Florida, Georgia, Hawaii, Idaho, Illinois, Indiana, Iowa, Kansas, Kentucky, Louisiana, Maine, Maryland, Massachusetts, Michigan, Minnesota, Mississippi, Missouri, Montana, Nebraska, Nevada, New Hampshire, New Jersey, New Mexico, New York, North Carolina, North Dakota, Ohio, Oklahoma, Oregon, Pennsylvania, Rhode Island, South Carolina, South Dakota, Tennessee, Texas, Utah, Vermont, Virginia, Washington, West Virginia, Wisconsin, Wyoming.</p>
-
-    </div>
+    <!-- End Footer -->
 
   </div>
-
-  <footer>
-
-    <div>
-
-      <span>All content &copy; <strong>Inspired Heights, Inc.</strong></span>
-
-    </div>
-
-  </footer>
+  <!-- End Container -->
 
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <!-- Hammer.js (necessary for Simple slideshow) -->
-  <script src="https://ajax.googleapis.com/ajax/libs/hammerjs/2.0.8/hammer.min.js"></script>
   <!-- Include all compiled plugins (below), or include individual files as needed -->
-  <script src="js/bootstrap.js"></script>
-  <!-- Simple Slideshow javascript -->
-  <script src="js/better-simple-slideshow.min.js"></script>
-  <script src="js/main.js"></script>
-
+  <script src="js/bootstrap.min.js"></script>
 </body>
 
 </html>

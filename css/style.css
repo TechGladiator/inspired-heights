@@ -1,167 +1,25 @@
-/* --- base styles --- */
-
-* {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
+/*--- Base Styles ---*/
 
 body {
-  text-align: center;
   font-family: 'Khula', sans-serif;
-  color: #0a2856;
-  background: url(../images/clouds-295695_1920.jpg) top center no-repeat #ccdfff;
-  margin-top: 3.86em;
-  background-size: cover;
-}
-
-a {
-  display: block;
-  text-decoration: none;
-  color: #061384;
-  -webkit-transition-duration: 0.4s;
-  transition-duration: 0.4s;
-}
-
-a:hover {
-  text-decoration: underline;
-  color: #cee1ff;
-}
-
-ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+  padding-top: 75px;
+  font-size: 16px;
 }
 
 
-/* --- navbar --- */
-
-.navbar {
-  background: url(../images/cloud-97453_1920.jpg) center top no-repeat #ccdfff;
-  background-size: auto 736px;
-  -webkit-box-shadow: 0px 2px 5px -1px rgba(0, 0, 0, 0.75);
-  box-shadow: 0px 2px 5px -1px rgba(0, 0, 0, 0.75);
-}
-
-.navbar-default,
-.navbar-default .navbar-collapse {
-  border-color: transparent;
-}
-
-.navbar-nav {
-  margin-bottom: 100%;
-  font-size: x-large;
-  font-weight: bold;
-}
-
-.container>.navbar-header {
-  margin: 0;
-}
-
-.navbar-collapse {
-  -webkit-box-shadow: none;
-  box-shadow: none;
-}
-
-.nav>li {
-  padding: 2px;
-}
+/*--- Navbar  ---*/
 
 
-/* --- navbar button --- */
+/*--- Logo  ---*/
 
-.navbar-default .navbar-toggle {
-  border-color: transparent;
-}
-
-.navbar-default .navbar-toggle .icon-bar {
-  background-color: #0a2856;
-}
-
-.navbar-default .navbar-toggle:focus,
-.navbar-default .navbar-toggle:hover {
-  background-color: transparent;
-}
-
-.navbar-toggle {
-  margin-top: 10px;
-  margin-right: -2px;
-  padding: 7px 8px;
-}
-
-
-/* set animation speed for bars */
-
-.bar1,
-.bar2,
-.bar3 {
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-}
-
-
-/* rotate bar1 */
-
-.change .bar1 {
-  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-  transform: rotate(-45deg) translate(-5px, 4px);
-}
-
-
-/* fade out bar2 */
-
-.change .bar2 {
-  opacity: 0;
-}
-
-
-/* rotate bar3 */
-
-.change .bar3 {
-  -webkit-transform: rotate(45deg) translate(-8px, -8px);
-  transform: rotate(45deg) translate(-4px, -4px);
-}
-
-
-/* --- menu --- */
-
-.navbar-default .navbar-nav>.active>a,
-.navbar-default .navbar-nav>.active>a:hover,
-.navbar-default .navbar-nav>.active>a:focus {
-  color: #74a5ec;
-  background-color: rgba(10, 40, 86, .3);
-}
-
-.navbar-default .navbar-nav>li>a:hover,
-.navbar-default .navbar-nav>li>a:focus {
-  color: #dce1e6;
-}
-
-.navbar-default .navbar-nav>li>a {
-  color: #93a4c0;
-  text-shadow: 0 3px 3px black;
-}
-
-
-/* --- logo --- */
-
-.navbar-brand {
-  padding: 0 0 0 1px;
-  height: 54px;
-}
-
-.main-logo,
-.sub-logo,
-.phone {
-  color: #022b47;
-  margin: 0;
-  text-align: left;
+.logo {
+  padding: 5px 0 0 1px;
+  height: 100%;
 }
 
 .main-logo,
 .sub-logo {
   font-family: 'Anton', sans-serif;
-  padding-bottom: 1px;
 }
 
 .main-logo {
@@ -169,12 +27,11 @@ ul {
 }
 
 .sub-logo {
-  font-size: .54em;
+  font-size: .52em;
 }
 
 .phone {
-  font-size: .9em;
-  font-weight: 900
+  font-size: .7em;
 }
 
 .phone strong {
@@ -182,41 +39,67 @@ ul {
 }
 
 
-/* --- slideshow --- */
+/*--- Menu ---*/
 
-.bss-prev {
-  padding: 15px 10px 10px 5px;
+
+/*--- Menu Button ---*/
+
+.hamburger {
+  top: 10px;
 }
 
-.bss-next {
-  padding: 15px 5px 10px 10px;
+
+/*--- Jumbotron ---*/
+
+.jumbotron {
+  padding-top: 10px;
+  padding-bottom: 0;
+}
+
+.welcome {
+  font-family: 'Anton', sans-serif;
+  font-size: 1.5em;
+  position: absolute;
+  z-index: 1;
+  top: 75px;
+  width: 100%;
 }
 
 
-/* --- main content --- */
+/*--- Main Content ---*/
 
 .president {
-  max-width: 40%;
-  margin-top: 18px;
-  -webkit-box-shadow: 0px 1px 5px 2px rgba(0, 0, 0, 0.6);
-  box-shadow: 0px 1px 5px 2px rgba(0, 0, 0, 0.6);
-}
-
-.main-content {
-  margin: 10px;
-  text-align: justify;
-  font-size: 18px;
-}
-
-.services {
-  text-align: center;
+  max-width: 65.5%;
+  margin-bottom: 30px;
 }
 
 
-/* --- titlebar --- */
+/*--- Media Queries ---*/
 
-.titlebar {
-  margin: 10px 20px 0;
-  font-weight: bold;
-  text-align: center;
+@media (max-device-width: 767px) and (orientation: landscape) {
+  .navbar-fixed-top .navbar-collapse {
+    max-height: 210px;
+  }
+}
+
+@media (min-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+@media (min-height: 480px) {
+  .navbar-fixed-top .main-menu {
+    max-height: 100%;
+    border-color: transparent;
+  }
+}
+
+@media (min-width: 375px) {
+  .sub-logo {
+    font-size: .54em;
+  }
+  .phone {
+    font-size: .9em;
+  }
 }
