@@ -49,22 +49,20 @@ body {
 }
 
 
-/*--- Welcome Heading ---*/
+/*--- Jumbotron ---*/
+
+.jumbotron {
+  padding-top: 10px;
+  padding-bottom: 0;
+}
 
 .welcome {
   font-family: 'Anton', sans-serif;
   font-size: 1.5em;
-  height: 0;
-}
-
-.welcome h2, h3 {
-  position: relative;
+  position: absolute;
   z-index: 1;
-  top: -157px;
-}
-
-.welcome h3 {
-  top: -100px;
+  top: 75px;
+  width: 100%;
 }
 
 
@@ -79,9 +77,8 @@ body {
 /*--- Media Queries ---*/
 
 @media (max-device-width: 767px) and (orientation: landscape) {
-  .navbar-fixed-top .navbar-collapse,
-  .navbar-fixed-bottom .navbar-collapse {
-    max-height: 200px;
+  .navbar-fixed-top .navbar-collapse {
+    max-height: 210px;
   }
 }
 
