@@ -9,6 +9,11 @@ body {
 
 /*--- Navbar  ---*/
 
+.top-navbar {
+  background: radial-gradient(circle, white, transparent), url('/images/cloud-97453_1920.jpg') no-repeat center center fixed, #6bacf7;
+  background-size: cover;
+}
+
 
 /*--- Logo  ---*/
 
@@ -91,6 +96,7 @@ body {
   .navbar-fixed-top .main-menu {
     max-height: 100%;
     border-color: transparent;
+    box-shadow: none;
   }
 }
 
