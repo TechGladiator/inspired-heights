@@ -10,7 +10,7 @@ body {
 /*--- Navbar  ---*/
 
 .top-navbar {
-  background: radial-gradient(circle, white, transparent), url('/images/cloud-97453_1920.jpg') no-repeat center center fixed, #6bacf7;
+  background: radial-gradient(circle, white, transparent), url('../images/cloud-97453_1920.jpg') no-repeat center center fixed, #6bacf7;
   background-size: cover;
 }
 
