@@ -9,12 +9,23 @@ body {
 
 /*--- Navbar  ---*/
 
+.top-navbar {
+  background: radial-gradient(circle, white, transparent), url('/images/cloud-97453_1920.jpg') no-repeat center center fixed, #6bacf7;
+  background-size: cover;
+}
+
 
 /*--- Logo  ---*/
 
-.logo {
+.top-navbar .logo {
   padding: 5px 0 0 1px;
   height: 100%;
+  color: #1f477e;
+}
+
+.top-navbar .logo:focus,
+.top-navbar .logo:hover {
+  color: #3e6097;
 }
 
 .main-logo,
@@ -39,26 +50,32 @@ body {
 }
 
 
-/*--- Menu ---*/
+/*--- Navbar Button ---*/
 
-
-/*--- Menu Button ---*/
-
-.hamburger {
+.top-navbar .hamburger {
   top: 10px;
+  border-color: rgba(0, 0, 0, 0);
+}
+
+.top-navbar .hamburger:focus,
+.top-navbar .hamburger:hover {
+  background-color: rgba(150, 157, 184, 0.4);
+}
+
+.top-navbar .hamburger .bars {
+  background-color: #1f477e;
 }
 
 
 /*--- Jumbotron ---*/
 
-.jumbotron {
-  padding-top: 10px;
+.jumbo {
+  padding-top: 0;
   padding-bottom: 0;
 }
 
 .welcome {
   font-family: 'Anton', sans-serif;
-  font-size: 1.5em;
   position: absolute;
   z-index: 1;
   top: 75px;
@@ -88,10 +105,11 @@ body {
   }
 }
 
-@media (min-height: 480px) {
+@media (min-height: 450px) {
   .navbar-fixed-top .main-menu {
     max-height: 100%;
     border-color: transparent;
+    box-shadow: none;
   }
 }
 
