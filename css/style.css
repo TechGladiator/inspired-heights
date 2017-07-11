@@ -79,6 +79,8 @@ body {
 
 .welcome {
   font-family: 'Anton', sans-serif;
+  color: #969DB8;
+  text-shadow: 1px 1px 3px black;
   position: absolute;
   z-index: 1;
   top: 75px;
