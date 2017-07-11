@@ -10,6 +10,9 @@ body {
 /*--- Navbar  ---*/
 
 .top-navbar {
+  background: -webkit-gradient(linear, left top, right top, from(white), to(transparent)), url('../images/cloud-97453_1920.jpg') no-repeat top center, #6bacf7;
+  background: -webkit-linear-gradient(left, white, transparent), url('../images/cloud-97453_1920.jpg') no-repeat top center, #6bacf7;
+  background: -o-linear-gradient(left, white, transparent), url('../images/cloud-97453_1920.jpg') no-repeat top center, #6bacf7;
   background: linear-gradient(left, white, transparent), url('../images/cloud-97453_1920.jpg') no-repeat top center, #6bacf7;
   background-size: 768px 512px;
 }
@@ -104,6 +107,8 @@ body {
     font-size: 14px;
   }
   .top-navbar {
+    background: -webkit-radial-gradient(circle, white, transparent), url('../images/cloud-97453_1920.jpg') no-repeat center, #6bacf7;
+    background: -o-radial-gradient(circle, white, transparent), url('../images/cloud-97453_1920.jpg') no-repeat center, #6bacf7;
     background: radial-gradient(circle, white, transparent), url('../images/cloud-97453_1920.jpg') no-repeat center, #6bacf7;
     background-position: center;
     background-size: cover;
@@ -114,7 +119,8 @@ body {
   .navbar-fixed-top .main-menu {
     max-height: 100%;
     border-color: transparent;
-    box-shadow: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
   }
 }
 
