@@ -10,8 +10,8 @@ body {
 /*--- Navbar  ---*/
 
 .top-navbar {
-  background: radial-gradient(circle, white, transparent), url('../images/cloud-97453_1920.jpg') no-repeat center center fixed, #6bacf7;
-  background-size: cover;
+  background: linear-gradient(left, white, transparent), url('../images/cloud-97453_1920.jpg') no-repeat top center, #6bacf7;
+  background-size: 768px 512px;
 }
 
 
@@ -102,6 +102,11 @@ body {
 @media (min-width: 768px) {
   body {
     font-size: 14px;
+  }
+  .top-navbar {
+    background: radial-gradient(circle, white, transparent), url('../images/cloud-97453_1920.jpg') no-repeat center, #6bacf7;
+    background-position: center;
+    background-size: cover;
   }
 }
 
