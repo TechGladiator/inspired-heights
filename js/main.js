@@ -15,3 +15,8 @@ $(function () {
     });
   });
 });
+
+// toggle hamburger menu animation
+function hamburger(x) {
+  x.classList.toggle("change");
+}
