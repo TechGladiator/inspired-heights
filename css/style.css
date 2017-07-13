@@ -140,13 +140,46 @@ a {
   padding-bottom: 0;
 }
 
+
+/*--- Carousel ---*/
+
+.carousel-inner .slide-1 {
+  background: url('../images/steeplejacks-3.jpg') no-repeat center;
+  background-size: cover;
+}
+
+.carousel-inner .slide-2 {
+  background: url('../images/steeplejacks-5.jpg') no-repeat center;
+  background-size: cover;
+}
+
+.carousel-inner .slide-3 {
+  background: url('../images/steeplejacks-11.jpg') no-repeat center;
+  background-size: cover;
+}
+
+.carousel-inner .slide-4 {
+  background: url('../images/steeplejacks-13.jpg') no-repeat center;
+  background-size: cover;
+}
+
+.carousel-inner .slide-5 {
+  background: url('../images/steeplejacks-22.jpg') no-repeat center;
+  background-size: cover;
+}
+
+.carousel-inner .active {
+  width: 100%;
+  height: 240px;
+}
+
 .welcome {
   font-family: 'Anton', sans-serif;
   color: #969DB8;
   text-shadow: 1px 1px 3px black;
   position: absolute;
   z-index: 1;
-  top: 75px;
+  top: 130px;
   width: 100%;
 }
 
