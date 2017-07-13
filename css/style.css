@@ -56,6 +56,16 @@ blockquote footer {
   background-color: transparent;
 }
 
+.services-menu {
+  background-color: #969db8;
+}
+
+.services-menu>li>a:focus,
+.services-menu>li>a:hover {
+  background-color: #ccccff;
+  background-image: linear-gradient(to bottom,#f5f5f5 0,#ccccff 100%);
+}
+
 
 /*--- Logo  ---*/
 
@@ -67,7 +77,9 @@ blockquote footer {
 .top-navbar .logo:focus,
 .top-navbar .logo:hover,
 .top-navbar .navbar-nav>li>a:focus,
-.top-navbar .navbar-nav>li>a:hover {
+.top-navbar .navbar-nav>li>a:hover,
+.services-menu>li>a:focus,
+.services-menu>li>a:hover {
   color: #788dac;
 }
 
