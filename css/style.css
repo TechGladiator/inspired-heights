@@ -183,6 +183,24 @@ a {
 
 /*--- Media Queries ---*/
 
+@media (min-width: 375px) {
+  .sub-logo {
+    font-size: .54em;
+  }
+  .phone {
+    font-size: .9em;
+  }
+}
+
+@media (min-height: 450px) {
+  .navbar-fixed-top .main-menu {
+    max-height: 100%;
+    border-color: transparent;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+}
+
 @media (max-device-width: 767px) and (orientation: landscape) {
   .navbar-fixed-top .navbar-collapse {
     max-height: 210px;
@@ -199,23 +217,5 @@ a {
     background: radial-gradient(circle, white, transparent), url('../images/cloud-97453_1920.jpg') no-repeat center, #6bacf7;
     background-position: center;
     background-size: cover;
-  }
-}
-
-@media (min-height: 450px) {
-  .navbar-fixed-top .main-menu {
-    max-height: 100%;
-    border-color: transparent;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-  }
-}
-
-@media (min-width: 375px) {
-  .sub-logo {
-    font-size: .54em;
-  }
-  .phone {
-    font-size: .9em;
   }
 }
