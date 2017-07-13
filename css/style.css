@@ -62,11 +62,13 @@ a {
 }
 
 .main-logo,
-.sub-logo {
+.sub-logo,
+.welcome {
   font-family: 'Anton', sans-serif;
 }
 
-.main-logo {
+.main-logo,
+.welcome {
   font-size: 1.4em;
 }
 
@@ -140,14 +142,21 @@ a {
   padding-bottom: 0;
 }
 
+
 .welcome {
-  font-family: 'Anton', sans-serif;
-  color: #969DB8;
-  text-shadow: 1px 1px 3px black;
+  color: #ccccff;
+  text-shadow: 2px 2px 4px black;
   position: absolute;
   z-index: 1;
-  top: 75px;
+  top: 130px;
   width: 100%;
+}
+
+.item>img.center-images {
+  width: 100%;
+  max-height: 360px;
+  object-fit: cover;
+  object-position: 100% 25%;
 }
 
 
