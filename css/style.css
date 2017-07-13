@@ -1,5 +1,9 @@
 /*--- Base Styles ---*/
 
+html {
+  min-width: 320px;
+}
+
 body {
   padding-top: 75px;
   font-family: 'Khula', sans-serif;
@@ -19,6 +23,7 @@ a {
 /*--- Navbar  ---*/
 
 .top-navbar {
+  min-width: 320px;
   background: -webkit-gradient(linear, left top, right top, from(white), to(transparent)), url('../images/cloud-97453_1920.jpg') no-repeat top center, #6bacf7;
   background: -webkit-linear-gradient(left, white, transparent), url('../images/cloud-97453_1920.jpg') no-repeat top center, #6bacf7;
   background: -o-linear-gradient(left, white, transparent), url('../images/cloud-97453_1920.jpg') no-repeat top center, #6bacf7;
@@ -142,6 +147,16 @@ a {
   padding-bottom: 0;
 }
 
+.item>img.center-images {
+  width: 100%;
+  max-height: 360px;
+  object-fit: cover;
+  object-position: 100% 25%;
+}
+
+.carousel-control {
+  z-index: 4;
+}
 
 .welcome {
   color: #ccccff;
@@ -150,13 +165,11 @@ a {
   z-index: 1;
   top: 130px;
   width: 100%;
+  min-width: 320px;
 }
 
-.item>img.center-images {
-  width: 100%;
-  max-height: 360px;
-  object-fit: cover;
-  object-position: 100% 25%;
+.welcome>h2 {
+  font-size: 1.93em;
 }
 
 
