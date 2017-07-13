@@ -62,11 +62,13 @@ a {
 }
 
 .main-logo,
-.sub-logo {
+.sub-logo,
+.welcome {
   font-family: 'Anton', sans-serif;
 }
 
-.main-logo {
+.main-logo,
+.welcome {
   font-size: 1.4em;
 }
 
@@ -174,9 +176,8 @@ a {
 }
 
 .welcome {
-  font-family: 'Anton', sans-serif;
-  color: #969DB8;
-  text-shadow: 1px 1px 3px black;
+  color: #ccccff;
+  text-shadow: 2px 2px 4px black;
   position: absolute;
   z-index: 1;
   top: 130px;
