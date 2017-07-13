@@ -19,6 +19,20 @@ a {
   transition-duration: 0.4s;
 }
 
+a,
+.top-navbar .navbar-nav>.active>a,
+.top-navbar .navbar-nav>.open>a,
+.top-navbar .navbar-nav>.open>a:focus,
+.top-navbar .navbar-nav>.open>a:hover,
+.top-navbar .navbar-nav>.active>a:focus,
+.top-navbar .navbar-nav>.active>a:hover,
+.top-navbar .navbar-nav>li>a,
+.services-menu>li>a,
+.top-navbar .logo,
+blockquote footer {
+  color: #1f477e;
+}
+
 
 /*--- Navbar  ---*/
 
@@ -38,18 +52,8 @@ a {
 .top-navbar .navbar-nav>.open>a:hover,
 .top-navbar .navbar-nav>.active>a:focus,
 .top-navbar .navbar-nav>.active>a:hover {
-  color: #1f477e;
   background-image: linear-gradient(to bottom, rgba(120, 141, 172, 0.25) 0, rgba(150, 157, 184, 0.25) 100%);
   background-color: transparent;
-}
-
-.top-navbar .navbar-nav>li>a {
-  color: #1f477e;
-}
-
-.top-navbar .navbar-nav>li>a:focus,
-.top-navbar .navbar-nav>li>a:hover {
-  text-shadow: -1px -1px 1px black;
 }
 
 
@@ -58,12 +62,13 @@ a {
 .top-navbar .logo {
   padding: 5px 0 0 1px;
   height: 100%;
-  color: #1f477e;
 }
 
 .top-navbar .logo:focus,
-.top-navbar .logo:hover {
-  color: #3e6097;
+.top-navbar .logo:hover,
+.top-navbar .navbar-nav>li>a:focus,
+.top-navbar .navbar-nav>li>a:hover {
+  color: #788dac;
 }
 
 .main-logo,
@@ -201,6 +206,16 @@ a {
   }
 }
 
+@media (max-width: 767px) {
+  .top-navbar .navbar-nav .open .services-menu>li>a {
+    color: #1f477e;
+  }
+  .top-navbar .navbar-nav .open .services-menu>li>a:focus,
+  .top-navbar .navbar-nav .open .services-menu>li>a:hover {
+    color: #788dac;
+  }
+}
+
 @media (max-device-width: 767px) and (orientation: landscape) {
   .navbar-fixed-top .navbar-collapse {
     max-height: 210px;
@@ -217,5 +232,9 @@ a {
     background: radial-gradient(circle, white, transparent), url('../images/cloud-97453_1920.jpg') no-repeat center, #6bacf7;
     background-position: center;
     background-size: cover;
+  }
+  .navbar-nav>li>a {
+    padding-top: 27px;
+    padding-bottom: 27px;
   }
 }
