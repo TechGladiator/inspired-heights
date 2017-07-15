@@ -30,7 +30,7 @@ a,
 .services-menu>li>a,
 .top-navbar .logo,
 blockquote footer {
-  color: #1f477e;
+  color: #255195;
 }
 
 
@@ -57,13 +57,13 @@ blockquote footer {
 }
 
 .services-menu {
-  background-color: #969db8;
+  background-color: #7d92b8;
 }
 
 .services-menu>li>a:focus,
 .services-menu>li>a:hover {
-  background-color: #ccccff;
-  background-image: linear-gradient(to bottom,#f5f5f5 0,#ccccff 100%);
+  background-color: #7d92b8;
+  background-image: linear-gradient(to bottom,#fff 0,#7d92b8 100%);
 }
 
 
@@ -80,7 +80,7 @@ blockquote footer {
 .top-navbar .navbar-nav>li>a:hover,
 .services-menu>li>a:focus,
 .services-menu>li>a:hover {
-  color: #788dac;
+  color: #7d92b8;
 }
 
 .main-logo,
@@ -120,7 +120,7 @@ blockquote footer {
 }
 
 .top-navbar .hamburger .bars {
-  background-color: #1f477e;
+  background-color: #255195;
 }
 
 
@@ -176,7 +176,7 @@ blockquote footer {
 }
 
 .welcome {
-  color: #ccccff;
+  color: #7d92b8;
   text-shadow: 2px 2px 4px black;
   position: relative;
   z-index: 1;
@@ -236,11 +236,11 @@ blockquote footer {
 
 @media (max-width: 767px) {
   .top-navbar .navbar-nav .open .services-menu>li>a {
-    color: #1f477e;
+    color: #255195;
   }
   .top-navbar .navbar-nav .open .services-menu>li>a:focus,
   .top-navbar .navbar-nav .open .services-menu>li>a:hover {
-    color: #788dac;
+    color: #7d92b8;
   }
 }
 
