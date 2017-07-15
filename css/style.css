@@ -265,6 +265,9 @@ blockquote footer {
     padding-top: 27px;
     padding-bottom: 27px;
   }
+  .welcome {
+    font-size: 3em;
+  }
 }
 
 @media (min-width: 992px) {
@@ -282,6 +285,9 @@ blockquote footer {
     text-align: center;
     top: 20px;
   }
+  .item>img.center-images {
+    max-height: 380px;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -290,5 +296,9 @@ blockquote footer {
   }
   .item>img.center-images {
     max-height: 480px;
+  }
+  .welcome {
+    font-size: 4em;
+    top: -345px;
   }
 }
