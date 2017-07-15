@@ -20,3 +20,28 @@ $(function () {
 function hamburger(x) {
   x.classList.toggle("change");
 }
+
+// trigger contact modal
+$(".contact").click(function() {
+  $('#myModal').modal('toggle');
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
