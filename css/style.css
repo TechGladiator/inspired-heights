@@ -301,4 +301,12 @@ blockquote footer {
     font-size: 4em;
     top: -345px;
   }
+  .spotlight {
+    height: 353px;
+  }
+  blockquote {
+    position: relative;
+    left: 390px;
+    top: -134px;
+  }
 }
