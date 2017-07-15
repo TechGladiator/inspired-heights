@@ -266,3 +266,29 @@ blockquote footer {
     padding-bottom: 27px;
   }
 }
+
+@media (min-width: 992px) {
+  body {
+    padding-top: 55px;
+  }
+  .navbar-nav>li>a {
+    padding-top: 17px;
+    padding-bottom: 17px;
+  }
+  .phone {
+    position: absolute;
+    margin-left: inherit;
+    width: 992px;
+    text-align: center;
+    top: 20px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .phone {
+    width: 1200px;
+  }
+  .item>img.center-images {
+    max-height: 480px;
+  }
+}
