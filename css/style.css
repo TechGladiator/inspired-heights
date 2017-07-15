@@ -1,5 +1,11 @@
 /*--- Base Styles ---*/
 
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
 html {
   min-width: 320px;
 }
@@ -17,8 +23,8 @@ body {
 
 a {
   -webkit-transition-duration: 0.4s;
-       -o-transition-duration: 0.4s;
-          transition-duration: 0.4s;
+  -o-transition-duration: 0.4s;
+  transition-duration: 0.4s;
 }
 
 a,
@@ -33,6 +39,11 @@ a,
 .top-navbar .logo,
 blockquote footer {
   color: #255195;
+}
+
+.wrapper {
+  min-height: 100%;
+  margin-bottom: -50px;
 }
 
 
@@ -68,10 +79,10 @@ blockquote footer {
 .services-menu>li>a:focus,
 .services-menu>li>a:hover {
   background-color: #7d92b8;
-  background-image: -webkit-gradient(linear,left top, left bottom,color-stop(0, #fff),to(#7d92b8));
-  background-image: -webkit-linear-gradient(top,#fff 0,#7d92b8 100%);
-  background-image: -o-linear-gradient(top,#fff 0,#7d92b8 100%);
-  background-image: linear-gradient(to bottom,#fff 0,#7d92b8 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff), to(#7d92b8));
+  background-image: -webkit-linear-gradient(top, #fff 0, #7d92b8 100%);
+  background-image: -o-linear-gradient(top, #fff 0, #7d92b8 100%);
+  background-image: linear-gradient(to bottom, #fff 0, #7d92b8 100%);
 }
 
 
@@ -148,7 +159,7 @@ blockquote footer {
 .change .bar1 {
   -webkit-transform: rotate(-45deg) translate(-9px, 6px);
   -ms-transform: rotate(-45deg) translate(-5px, 4px);
-      transform: rotate(-45deg) translate(-5px, 4px);
+  transform: rotate(-45deg) translate(-5px, 4px);
 }
 
 
@@ -164,7 +175,15 @@ blockquote footer {
 .change .bar3 {
   -webkit-transform: rotate(45deg) translate(-8px, -8px);
   -ms-transform: rotate(45deg) translate(-4px, -4px);
-      transform: rotate(45deg) translate(-4px, -4px);
+  transform: rotate(45deg) translate(-4px, -4px);
+}
+
+
+/*--- Footer ---*/
+
+.footer,
+.push {
+  height: 50px;
 }
 
 
@@ -179,9 +198,9 @@ blockquote footer {
   width: 100%;
   max-height: 360px;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   -o-object-position: 100% 25%;
-     object-position: 100% 25%;
+  object-position: 100% 25%;
 }
 
 .carousel-control {
