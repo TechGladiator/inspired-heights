@@ -16,7 +16,9 @@ body {
 }
 
 a {
-  transition-duration: 0.4s;
+  -webkit-transition-duration: 0.4s;
+       -o-transition-duration: 0.4s;
+          transition-duration: 0.4s;
 }
 
 a,
@@ -52,6 +54,9 @@ blockquote footer {
 .top-navbar .navbar-nav>.open>a:hover,
 .top-navbar .navbar-nav>.active>a:focus,
 .top-navbar .navbar-nav>.active>a:hover {
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(120, 141, 172, 0.25)), to(rgba(150, 157, 184, 0.25)));
+  background-image: -webkit-linear-gradient(top, rgba(120, 141, 172, 0.25) 0, rgba(150, 157, 184, 0.25) 100%);
+  background-image: -o-linear-gradient(top, rgba(120, 141, 172, 0.25) 0, rgba(150, 157, 184, 0.25) 100%);
   background-image: linear-gradient(to bottom, rgba(120, 141, 172, 0.25) 0, rgba(150, 157, 184, 0.25) 100%);
   background-color: transparent;
 }
@@ -63,6 +68,9 @@ blockquote footer {
 .services-menu>li>a:focus,
 .services-menu>li>a:hover {
   background-color: #7d92b8;
+  background-image: -webkit-gradient(linear,left top, left bottom,color-stop(0, #fff),to(#7d92b8));
+  background-image: -webkit-linear-gradient(top,#fff 0,#7d92b8 100%);
+  background-image: -o-linear-gradient(top,#fff 0,#7d92b8 100%);
   background-image: linear-gradient(to bottom,#fff 0,#7d92b8 100%);
 }
 
@@ -130,6 +138,7 @@ blockquote footer {
 .bar2,
 .bar3 {
   -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
   transition: 0.4s;
 }
 
@@ -138,7 +147,8 @@ blockquote footer {
 
 .change .bar1 {
   -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-  transform: rotate(-45deg) translate(-5px, 4px);
+  -ms-transform: rotate(-45deg) translate(-5px, 4px);
+      transform: rotate(-45deg) translate(-5px, 4px);
 }
 
 
@@ -153,7 +163,8 @@ blockquote footer {
 
 .change .bar3 {
   -webkit-transform: rotate(45deg) translate(-8px, -8px);
-  transform: rotate(45deg) translate(-4px, -4px);
+  -ms-transform: rotate(45deg) translate(-4px, -4px);
+      transform: rotate(45deg) translate(-4px, -4px);
 }
 
 
@@ -167,8 +178,10 @@ blockquote footer {
 .item>img.center-images {
   width: 100%;
   max-height: 360px;
-  object-fit: cover;
-  object-position: 100% 25%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 100% 25%;
+     object-position: 100% 25%;
 }
 
 .carousel-control {
