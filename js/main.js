@@ -22,8 +22,10 @@ function hamburger(x) {
 }
 
 // trigger About modal
-$(".about").click(function() {
-  $('#aboutModal').modal('toggle');
+$(".about").click(function () {
+  BootstrapDialog.show({
+    message: $('<div></div>').load('about.html')
+  });
 })
 
 // trigger contact modal
@@ -52,7 +54,7 @@ $("#contact-us").validate({
       maxlength: 500
     }
   },
-  submitHandler: function(form) {
+  submitHandler: function (form) {
     $('#contactModal').modal('toggle');
     $('#successModal').modal('toggle');
   }

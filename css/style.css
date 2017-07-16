@@ -85,6 +85,10 @@ blockquote footer {
   background-image: linear-gradient(to bottom, #fff 0, #7d92b8 100%);
 }
 
+.about {
+  cursor: pointer;
+}
+
 .contact {
   cursor: pointer;
 }
