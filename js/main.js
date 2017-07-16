@@ -31,7 +31,6 @@ var form = $("#contact-us");
 
 // validation rules
 form.validate({
-  debug: true,
   rules: {
     user_name: {
       required: true,
@@ -52,34 +51,3 @@ form.validate({
     }
   }
 });
-
-// if valid info submitted
-var send = $(".send");
-
-var isValid = form.valid();
-
-if (isValid === true) {
-  send.click(function(){
-    $('#contactModal').modal('toggle');
-    
-  })
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
