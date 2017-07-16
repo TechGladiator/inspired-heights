@@ -22,16 +22,21 @@ function hamburger(x) {
   x.classList.toggle("change");
 }
 
+// trigger About modal
+$(".about").click(function () {
+  BootstrapDialog.show({
+    title: 'About Inspired Heights',
+    message: $('<div></div>').load('about.html')
+  });
+})
+
 // trigger contact modal
 $(".contact").click(function () {
   $('#contactModal').modal('toggle');
 })
 
 // jQuery form validation - https://jqueryvalidation.org/
-var form = $("#contact-us");
-
-// validation rules
-form.validate({
+$("#contact-us").validate({
   rules: {
     user_name: {
       required: true,
@@ -51,7 +56,7 @@ form.validate({
       maxlength: 500
     }
   },
-  submitHandler: function(form) {
+  submitHandler: function (form) {
     $('#contactModal').modal('toggle');
     $('#successModal').modal('toggle');
   }

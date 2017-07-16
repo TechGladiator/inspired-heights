@@ -32,7 +32,8 @@ a,
 .top-navbar .navbar-nav>li>a,
 .services-menu>li>a,
 .top-navbar .logo,
-blockquote footer {
+blockquote footer,
+.bootstrap-dialog-title {
   color: #255195;
 }
 
@@ -52,12 +53,17 @@ blockquote footer {
 
 /*--- Navbar  ---*/
 
-.top-navbar {
-  min-width: 320px;
+.top-navbar,
+.modal-content {
   background: -webkit-gradient(linear, left top, right top, from(white), to(transparent)), url('../images/cloud-97453_1920.jpg') no-repeat top center, #6bacf7;
   background: -webkit-linear-gradient(left, white, transparent), url('../images/cloud-97453_1920.jpg') no-repeat top center, #6bacf7;
   background: -o-linear-gradient(left, white, transparent), url('../images/cloud-97453_1920.jpg') no-repeat top center, #6bacf7;
   background: linear-gradient(left, white, transparent), url('../images/cloud-97453_1920.jpg') no-repeat top center, #6bacf7;
+  background-size: cover;
+}
+
+.top-navbar {
+  min-width: 320px;
   background-size: 768px 512px;
   border-color: transparent;
 }
@@ -88,6 +94,10 @@ blockquote footer {
   background-image: linear-gradient(to bottom, #fff 0, #7d92b8 100%);
 }
 
+.about {
+  cursor: pointer;
+}
+
 .contact {
   cursor: pointer;
 }
@@ -111,12 +121,14 @@ blockquote footer {
 
 .main-logo,
 .sub-logo,
-.welcome {
+.welcome,
+.bootstrap-dialog-title {
   font-family: 'Anton', sans-serif;
 }
 
 .main-logo,
-.welcome {
+.welcome,
+.bootstrap-dialog-title {
   font-size: 1.4em;
 }
 
@@ -151,6 +163,8 @@ blockquote footer {
 
 
 /* animated hamburger menu - https://www.w3schools.com/howto/howto_css_menu_icon.asp */
+
+
 /* set animation speed for bars */
 
 .bar1,
@@ -237,6 +251,22 @@ blockquote footer {
 .president {
   max-width: 65.5%;
   margin-bottom: 30px;
+  box-shadow: 2px 2px 5px black;
+}
+
+blockquote {
+  border-left: 5px solid #7d92b8;
+}
+
+
+/*--- Modals ---*/
+
+.modal-header {
+  background-color: rgba(107, 172, 247, 0.2);
+}
+
+.chicago-repair {
+  box-shadow: 2px 2px 5px black;
 }
 
 
@@ -308,6 +338,9 @@ blockquote footer {
   .welcome {
     font-size: 3em;
   }
+  .chicago-repair {
+    margin-top: 22%;
+  }
 }
 
 @media (min-width: 992px) {
@@ -344,7 +377,7 @@ blockquote footer {
   .spotlight {
     height: 353px;
   }
-  blockquote {
+  .spotlight>blockquote {
     position: relative;
     left: 390px;
     top: -134px;
