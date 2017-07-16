@@ -46,6 +46,7 @@ form.validate({
     },
     user_message: {
       required: true,
+      minlength: 10,
       maxlength: 500
     }
   }
