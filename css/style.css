@@ -163,6 +163,8 @@ blockquote footer,
 
 
 /* animated hamburger menu - https://www.w3schools.com/howto/howto_css_menu_icon.asp */
+
+
 /* set animation speed for bars */
 
 .bar1,
@@ -249,6 +251,11 @@ blockquote footer,
 .president {
   max-width: 65.5%;
   margin-bottom: 30px;
+  box-shadow: 2px 2px 5px black;
+}
+
+blockquote {
+  border-left: 5px solid #7d92b8;
 }
 
 
@@ -256,6 +263,10 @@ blockquote footer,
 
 .modal-header {
   background-color: rgba(107, 172, 247, 0.2);
+}
+
+.chicago-repair {
+  box-shadow: 2px 2px 5px black;
 }
 
 
@@ -327,6 +338,9 @@ blockquote footer,
   .welcome {
     font-size: 3em;
   }
+  .chicago-repair {
+    margin-top: 22%;
+  }
 }
 
 @media (min-width: 992px) {
@@ -363,7 +377,7 @@ blockquote footer,
   .spotlight {
     height: 353px;
   }
-  blockquote {
+  .spotlight>blockquote {
     position: relative;
     left: 390px;
     top: -134px;
