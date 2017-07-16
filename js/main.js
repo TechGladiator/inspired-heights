@@ -22,12 +22,17 @@ function hamburger(x) {
 }
 
 // trigger contact modal
-$(".contact").click(function () {
-  $('#myModal').modal('toggle');
+$('.contact').click(function () {
+  $('#contact-us').modal('toggle');
+})
+
+// hide contact modal
+$('.dismiss').click(function() {
+  $('#contact-us').modal('toggle');
 })
 
 // jQuery form validation
-var form = $("#contact-us");
+var form = $('#contact-us');
 
 // validation rules
 form.validate({
