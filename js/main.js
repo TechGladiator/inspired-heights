@@ -1,3 +1,4 @@
+// Add slide effect to bootstrap dropdown - https://stackoverflow.com/questions/12115833/adding-a-slide-effect-to-bootstrap-dropdown/28966943#28966943
 $(function () {
   // Add slideDown animation to Bootstrap dropdown when expanding.
   $('.dropdown').on('show.bs.dropdown', function (e) {
@@ -16,7 +17,7 @@ $(function () {
   });
 });
 
-// toggle hamburger menu animation
+// toggle hamburger menu animation - https://www.w3schools.com/howto/howto_css_menu_icon.asp
 function hamburger(x) {
   x.classList.toggle("change");
 }
@@ -26,7 +27,7 @@ $(".contact").click(function () {
   $('#contactModal').modal('toggle');
 })
 
-// jQuery form validation
+// jQuery form validation - https://jqueryvalidation.org/
 var form = $("#contact-us");
 
 // validation rules
