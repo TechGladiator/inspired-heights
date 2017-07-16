@@ -51,5 +51,9 @@ $("#contact-us").validate({
       minlength: 10,
       maxlength: 500
     }
+  },
+  submitHandler: function(form) {
+    $('#contactModal').modal('toggle');
+    $('#successModal').modal('toggle');
   }
 });
