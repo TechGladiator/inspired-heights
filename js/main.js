@@ -25,6 +25,7 @@ function hamburger(x) {
 // trigger About modal
 $(".about").click(function () {
   BootstrapDialog.show({
+    title: 'About Inspired Heights',
     message: $('<div></div>').load('about.html')
   });
 })

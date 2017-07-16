@@ -52,12 +52,17 @@ blockquote footer {
 
 /*--- Navbar  ---*/
 
-.top-navbar {
-  min-width: 320px;
+.top-navbar,
+.modal-content {
   background: -webkit-gradient(linear, left top, right top, from(white), to(transparent)), url('../images/cloud-97453_1920.jpg') no-repeat top center, #6bacf7;
   background: -webkit-linear-gradient(left, white, transparent), url('../images/cloud-97453_1920.jpg') no-repeat top center, #6bacf7;
   background: -o-linear-gradient(left, white, transparent), url('../images/cloud-97453_1920.jpg') no-repeat top center, #6bacf7;
   background: linear-gradient(left, white, transparent), url('../images/cloud-97453_1920.jpg') no-repeat top center, #6bacf7;
+  background-size: cover;
+}
+
+.top-navbar {
+  min-width: 320px;
   background-size: 768px 512px;
   border-color: transparent;
 }
@@ -242,6 +247,11 @@ blockquote footer {
   max-width: 65.5%;
   margin-bottom: 30px;
 }
+
+
+/*--- Modals ---*/
+
+
 
 
 /*--- Media Queries ---*/
