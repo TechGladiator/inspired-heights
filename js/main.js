@@ -26,32 +26,29 @@ $('.contact').click(function () {
   $('#contact-us').modal('toggle');
 })
 
-// hide contact modal
-$('.dismiss').click(function() {
-  $('#contact-us').modal('toggle');
-})
-
 // jQuery form validation
 var form = $('#contact-us');
 
 // validation rules
-form.validate({
-  rules: {
-    user_name: {
-      required: true,
-      minlength: 2
-    },
-    user_phone: {
-      required: true,
-      phoneUS: true
-    },
-    user_mail: {
-      required: true,
-      email: true
-    },
-    user_message: {
-      required: true,
-      maxlength: 500
+$('.validate').click(function () {
+  form.validate({
+    rules: {
+      user_name: {
+        required: true,
+        minlength: 2
+      },
+      user_phone: {
+        required: true,
+        phoneUS: true
+      },
+      user_mail: {
+        required: true,
+        email: true
+      },
+      user_message: {
+        required: true,
+        maxlength: 500
+      }
     }
-  }
+  });
 });
