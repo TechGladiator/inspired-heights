@@ -21,16 +21,18 @@ function hamburger(x) {
   x.classList.toggle("change");
 }
 
+// trigger About modal
+$(".about").click(function() {
+  $('#aboutModal').modal('toggle');
+})
+
 // trigger contact modal
 $(".contact").click(function () {
-  $('#myModal').modal('toggle');
+  $('#contactModal').modal('toggle');
 })
 
 // jQuery form validation
-var form = $("#contact-us");
-
-// validation rules
-form.validate({
+$("#contact-us").validate({
   rules: {
     user_name: {
       required: true,

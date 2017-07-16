@@ -27,13 +27,35 @@
 
 <body>
   
-  <!-- Modal -->
-  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <!-- About Modal -->
+<div class="modal fade" id="aboutModal" tabindex="-1" role="dialog" aria-labelledby="aboutModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="aboutModalLabel">Modal title</h4>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+  
+  <!-- End About Modal -->
+  
+  <!-- Contact Modal -->
+  
+  <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <h4 class="modal-title" id="myModalLabel">Contact Us</h4>
+          <h4 class="modal-title" id="contactModalLabel">Contact Us</h4>
         </div>
 
         <div class="modal-body">
@@ -85,7 +107,7 @@
     </div>
   </div>
   
-  <!-- End Modal -->
+  <!-- End Contact Modal -->
 
   <!-- Navbar -->
 
@@ -100,7 +122,7 @@
         <span class="icon-bar bars bar2"></span>
         <span class="icon-bar bars bar3"></span>
       </button>
-        <a class="navbar-brand logo" href="#">
+        <a class="navbar-brand logo" href="index.html">
           <span class="main-logo">Inspired Heights, Inc.</span>
           <br>
           <span class="sub-logo">Nationwide Church and Steeple Maintenance, Repair, &amp; Restoration</span>
@@ -111,8 +133,8 @@
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse main-menu" id="navbar-collapse-1">
         <ul class="nav navbar-nav navbar-right">
-          <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
-          <li><a href="#">About</a></li>
+          <li class="active"><a href="index.html">Home <span class="sr-only">(current)</span></a></li>
+          <li><a class="about" href="#">About</a></li>
           <li><a class="contact">Contact</a></li>
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services <span class="caret"></span></a>
