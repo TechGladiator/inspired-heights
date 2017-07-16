@@ -32,7 +32,8 @@ a,
 .top-navbar .navbar-nav>li>a,
 .services-menu>li>a,
 .top-navbar .logo,
-blockquote footer {
+blockquote footer,
+.bootstrap-dialog-title {
   color: #255195;
 }
 
@@ -120,12 +121,14 @@ blockquote footer {
 
 .main-logo,
 .sub-logo,
-.welcome {
+.welcome,
+.bootstrap-dialog-title {
   font-family: 'Anton', sans-serif;
 }
 
 .main-logo,
-.welcome {
+.welcome,
+.bootstrap-dialog-title {
   font-size: 1.4em;
 }
 
@@ -251,7 +254,9 @@ blockquote footer {
 
 /*--- Modals ---*/
 
-
+.modal-header {
+  background-color: rgba(107, 172, 247, 0.2);
+}
 
 
 /*--- Media Queries ---*/
