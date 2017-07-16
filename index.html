@@ -28,12 +28,12 @@
 <body>
   
   <!-- Modal -->
-  <div class="modal fade" id="contact-us" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <button type="button" class="close dismiss" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <h4 class="modal-title" id="myModalLabel">Contact Us</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="contactModalLabel">Contact Us</h4>
         </div>
 
         <div class="modal-body">
@@ -70,7 +70,7 @@
 
             <div class="form-group">
               <div class="col-sm-offset-2 col-sm-10">
-                <button type="submit" class="btn btn-lg btn-primary">Send</button>
+                <button type="submit" class="btn btn-lg btn-primary send">Send</button>
               </div>
             </div>
 
@@ -79,13 +79,35 @@
         </div>
 
         <div class="modal-footer">
-          <button type="button" class="btn btn-primary dismiss">Close</button>
+          <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
         </div>
       </div>
     </div>
   </div>
   
   <!-- End Modal -->
+  
+  <!-- Form Success Modal -->
+  
+  <!-- Modal -->
+<div class="modal fade" id="successModal" tabindex="-1" role="dialog" aria-labelledby="successModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="successModalLabel">Form Submitted</h4>
+      </div>
+      <div class="modal-body">
+        Form validated successfully, but actual submission of form is not yet implemented
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+  
+  <!-- End Form Success Modal -->
 
   <!-- Navbar -->
 

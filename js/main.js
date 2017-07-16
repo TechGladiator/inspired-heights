@@ -22,17 +22,12 @@ function hamburger(x) {
 }
 
 // trigger contact modal
-$('.contact').click(function () {
-  $('#contact-us').modal('toggle');
-})
-
-// hide contact modal
-$('.dismiss').click(function() {
-  $('#contact-us').modal('toggle');
+$(".contact").click(function () {
+  $('#contactModal').modal('toggle');
 })
 
 // jQuery form validation
-var form = $('#contact-us');
+var form = $("#contact-us");
 
 // validation rules
 form.validate({
@@ -51,7 +46,12 @@ form.validate({
     },
     user_message: {
       required: true,
+      minlength: 10,
       maxlength: 500
     }
+  },
+  submitHandler: function(form) {
+    $('#contactModal').modal('toggle');
+    $('#successModal').modal('toggle');
   }
 });
