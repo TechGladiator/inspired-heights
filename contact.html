@@ -1,89 +1,45 @@
-<!DOCTYPE html>
-<html lang="en">
+<div class="modal-body">
 
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-  <title>Church &amp; Steeple Maintenance, Repair, &amp; Restoration</title>
+  <form action="" id="contact-us" class="form-horizontal contact-form">
 
-  <!-- Bootstrap -->
-  <link href="css/bootstrap.min.css" rel="stylesheet">
-  <link href="css/bootstrap-theme.min.css" rel="stylesheet">
-
-</head>
-
-<body>
-
-  <button class="contact btn btn-success">Contact</button>
-
-  <!-- Modal -->
-  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <h4 class="modal-title" id="myModalLabel">Contact Us</h4>
-        </div>
-
-        <div class="modal-body">
-
-          <form action="" id="contact-us" class="form-horizontal contact-form">
-
-            <div class="form-group">
-              <label for="name" class="col-sm-2 control-label">Name:</label>
-              <div class="col-sm-10">
-                <input type="text" class="form-control" id="name" name="user_name" placeholder="Your Name">
-              </div>
-            </div>
-
-            <div class="form-group">
-              <label for="phone" class="col-sm-2 control-label">Telephone:</label>
-              <div class="col-sm-10">
-                <input type="tel" class="form-control" id="phone" name="user_phone" placeholder="(xxx)xxx-xxxx">
-              </div>
-            </div>
-
-            <div class="form-group">
-              <label for="mail" class="col-sm-2 control-label">E-mail:</label>
-              <div class="col-sm-10">
-                <input type="email" class="form-control" id="mail" name="user_mail" placeholder="Email">
-              </div>
-            </div>
-
-            <div class="form-group">
-              <label for="msg" class="col-sm-2 control-label">Message:</label>
-              <div class="col-sm-10">
-                <textarea class="form-control" id="msg" name="user_message" placeholder="Max Length 500 characters"></textarea>
-              </div>
-            </div>
-
-            <div class="form-group">
-              <div class="col-sm-offset-2 col-sm-10">
-                <button type="submit" class="btn btn-lg btn-primary">Send</button>
-              </div>
-            </div>
-
-          </form>
-
-        </div>
-
-        <div class="modal-footer">
-          <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
-        </div>
+    <div class="form-group">
+      <label for="name" class="col-sm-2 control-label">Name:</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="name" name="user_name" placeholder="Your Name">
       </div>
     </div>
-  </div>
 
-  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-  <!-- jQuery Validation -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.16.0/jquery.validate.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.16.0/additional-methods.min.js"></script>
-  <!-- Include all compiled plugins (below), or include individual files as needed -->
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/main.js"></script>
-</body>
+    <div class="form-group">
+      <label for="phone" class="col-sm-2 control-label">Telephone:</label>
+      <div class="col-sm-10">
+        <input type="tel" class="form-control" id="phone" name="user_phone" placeholder="(xxx)xxx-xxxx">
+      </div>
+    </div>
 
-</html>
+    <div class="form-group">
+      <label for="mail" class="col-sm-2 control-label">E-mail:</label>
+      <div class="col-sm-10">
+        <input type="email" class="form-control" id="mail" name="user_mail" placeholder="john@example.com">
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="msg" class="col-sm-2 control-label">Message:</label>
+      <div class="col-sm-10">
+        <textarea class="form-control" id="msg" name="user_message" placeholder="Max Length 500 characters"></textarea>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <div class="col-sm-offset-2 col-sm-10">
+        <button type="submit" class="btn btn-lg btn-primary">Send</button>
+      </div>
+    </div>
+
+  </form>
+
+</div>
+
+<div class="modal-footer">
+  <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+</div>
