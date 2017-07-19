@@ -32,7 +32,10 @@ $(".about").click(function () {
 
 // trigger contact modal
 $(".contact").click(function () {
-  $('#contactModal').modal('toggle');
+  BootstrapDialog.show({
+    title: 'Contact Us',
+    message: $('<div></div>').load('contact.html')
+  });
 })
 
 // jQuery form validation - https://jqueryvalidation.org/
@@ -57,7 +60,10 @@ $("#contact-us").validate({
     }
   },
   submitHandler: function (form) {
-    $('#contactModal').modal('toggle');
-    $('#successModal').modal('toggle');
+    BootstrapDialog.hide();
+    BootstrapDialog.show({
+      title: 'Form Submitted',
+      message: $('<div></div>').load('submitted.html')
+    })
   }
 });
