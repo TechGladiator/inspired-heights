@@ -23,7 +23,7 @@ function hamburger(x) {
 }
 
 // trigger About modal
-$(".about").click(function () {
+$('.about').click(function () {
   BootstrapDialog.show({
     title: 'About Inspired Heights',
     message: $('<div></div>').load('about.html')
@@ -39,7 +39,7 @@ $(".contact").click(function () {
 })
 
 // jQuery form validation - https://jqueryvalidation.org/
-$("#contact-us").validate({
+$('#contact-us').validate({
   rules: {
     user_name: {
       required: true,
@@ -60,10 +60,9 @@ $("#contact-us").validate({
     }
   },
   submitHandler: function (form) {
-    BootstrapDialog.hide();
-    BootstrapDialog.show({
-      title: 'Form Submitted',
-      message: $('<div></div>').load('submitted.html')
-    })
+    $('.modal-title').empty();
+    $('.modal-body').empty();
+    $('.modal-title').append('Form Submitted');
+    $('.modal-body').append('Form validated successfully, but actual submission of form is not yet implemented');
   }
 });
