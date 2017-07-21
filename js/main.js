@@ -37,11 +37,35 @@ var form = $('<form/>', {
   class: 'form-horizontal contact-form'
 });
 
+var formGroup = $('<div/>', {
+  class: 'form-group'
+});
+
+var label = $('<label/>', {
+  class: 'col-sm-2 control-label'
+});
+
+var colDiv = $('<div/>', {
+  class: 'col-sm-10'
+});
+
+var input = $('<input>', {
+  class: 'form-control'
+});
+
+var formName = $(formGroup).append(
+  $(label, {for: 'name'}).append('Name:'),
+  $(colDiv),
+  $(input, {type: 'text', id: 'name', name: 'user-name', placeholder: 'Your Name'})
+);
+
+var contactForm = $(form).append(formName);
+
 // trigger contact modal
 $('.contact').click(function () {
   BootstrapDialog.show({
     title: 'Contact Us',
-    message: form
+    message: contactForm
   })
 })
 
