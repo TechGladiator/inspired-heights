@@ -30,9 +30,19 @@ $('.about').click(function () {
   });
 })
 
+// build contact form using jQuery
+var form = $('<form/>', {
+  action: ' ',
+  id: 'contact-us',
+  class: 'form-horizontal contact-form'
+});
+
 // trigger contact modal
 $('.contact').click(function () {
-  $('#contactModal').modal('toggle');
+  BootstrapDialog.show({
+    title: 'Contact Us',
+    message: form
+  })
 })
 
 // jQuery form validation - https://jqueryvalidation.org/
