@@ -251,7 +251,8 @@ blockquote footer,
 .president {
   max-width: 65.5%;
   margin-bottom: 30px;
-  box-shadow: 2px 2px 5px black;
+  -webkit-box-shadow: 2px 2px 5px black;
+          box-shadow: 2px 2px 5px black;
 }
 
 blockquote {
@@ -266,7 +267,8 @@ blockquote {
 }
 
 .chicago-repair {
-  box-shadow: 2px 2px 5px black;
+  -webkit-box-shadow: 2px 2px 5px black;
+          box-shadow: 2px 2px 5px black;
 }
 
 
