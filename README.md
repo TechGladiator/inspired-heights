@@ -1,8 +1,8 @@
 Inspired Heights
 ================
 
-The purpose of this project is to redesign the website for my brother's business. You can see the current site [here](http://inspiredheights.com/).
+The purpose of this project is to redesign the website for my brother's business.
 
-Currently the site does not have any responsiveness or a "mobile first" approach. My intention is to remedy that as well as update the overall appearance and (hopefully) functionality of the site.
+My intention is to improve the responsive design as well as update the overall appearance and (hopefully) functionality of the site.
 
 You can see how the project appears in its current form [here](https://techgladiator.github.io/inspired-heights/).
